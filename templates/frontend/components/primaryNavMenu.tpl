@@ -8,7 +8,18 @@
 * Primary navigation menu list for OJS
 *}
 <ul id="main-navigation" class="nav navbar-nav">
+  {* Primary site navigation *}
+  <nav id="nav-menu" class="navbar-collapse collapse" aria-label="{translate|escape key="common.navigation.site"}">
+    {* Primary navigation menu for current application *}
 
+
+    {* Search form *}
+    {if !$noContextsConfigured}
+      <div class="pull-md-right">
+        {include file="frontend/components/searchForm_simple.tpl"}
+      </div>
+    {/if}
+  </nav>
   {if $enableAnnouncements}
   <li>
     <a href="{url router=$smarty.const.ROUTE_PAGE page="announcement"}">

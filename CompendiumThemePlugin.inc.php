@@ -46,9 +46,9 @@ class CompendiumThemePlugin extends ThemePlugin {
 			)
 		));*/
 
+		$this->addStyle('bootstrap', 'styles/bootstrap.less');
 		$this->addStyle('compendium', 'styles/compendium.css');
 		$this->addStyle('movil', 'styles/movil.css');
-		$this->addStyle('bootstrap', 'styles/bootstrap.less');
 
 		/*$bootstrapTheme = $this->getOption('bootstrapTheme');
 		if (!empty($bootstrapTheme)) {

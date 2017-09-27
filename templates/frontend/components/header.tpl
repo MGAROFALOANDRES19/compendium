@@ -89,10 +89,10 @@
 								</ul>
 							</li>
 						{else}
+              <li><a class="login" href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{translate key="navigation.login"}</a></li>
 							{if !$hideRegisterLink}
-								<li><a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>
+								<li><a class="register"href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>
 							{/if}
-							<li><a href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{translate key="navigation.login"}</a></li>
 						{/if}
 					</ul>
 				</div><!-- .row -->
@@ -145,22 +145,9 @@
 
 				</div>
 
-				{* Primary site navigation *}
-				<nav id="nav-menu" class="navbar-collapse collapse" aria-label="{translate|escape key="common.navigation.site"}">
-					{* Primary navigation menu for current application *}
-					{include file="frontend/components/primaryNavMenu.tpl"}
-
-					{* Search form *}
-					{if !$noContextsConfigured}
-						<div class="pull-md-right">
-							{include file="frontend/components/searchForm_simple.tpl"}
-						</div>
-					{/if}
-				</nav>
-
-			</div><!-- .pkp_head_wrapper -->
+				</div><!-- .pkp_head_wrapper -->
 		</header><!-- .pkp_structure_head -->
-
+    {include file="frontend/components/primaryNavMenu.tpl"}
 		{* Wrapper for page content and sidebars *}
 		<div class="pkp_structure_content container">
 			<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">
