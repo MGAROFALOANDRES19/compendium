@@ -24,15 +24,98 @@
 
 	{call_hook name="Templates::Index::journal"}
 
-	{if $homepageImage}
+	<!--inicio-->
+
+	<!-- Inicio Banner -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  {**<ol class="carousel-indicators">
+  *{assign var=indice value=0}
+	*{if $homepageImage}
+  *  	<li data-target="#myCarousel" data-slide-to="{$indice}" class="active"></li>
+  *  	{assign var=indice value=$indice+1}
+  *  {/if}
+  *  {if $currentJournal->_data.imgCarousel1.$currentLocale.uploadName}
+  *  	<li data-target="#myCarousel" data-slide-to="{$indice}"></li>
+  *  	{assign var=indice value=$indice+1}
+  *  {/if}
+  *  {if $currentJournal->_data.imgCarousel2.$currentLocale.uploadName}
+  *  	<li data-target="#myCarousel" data-slide-to="{$indice}"></li>
+  *  	{assign var=indice value=$indice+1}
+  *  {/if}
+  *  {if $currentJournal->_data.imgCarousel3.$currentLocale.uploadName}
+  *  	<li data-target="#myCarousel" data-slide-to="{$indice}"></li>
+  *  	{assign var=indice value=$indice+1}
+  *  {/if}
+  </ol>*}
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="item active">
+      <figure class="imagen-principal">
+
+						<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
+
+						<!--<figcaption>-->
+							{*$additionalHomeContent*}
+						<!--</figcaption>-->
+
+						{if $additionalHomeContent}
+		<figcaption>
+			{$additionalHomeContent}
+		</figcaption>
+	{/if}
+
+					</figure>
+    </div>
+    {if $currentJournal->_data.imgCarousel1.$currentLocale.uploadName}
+    <div class="item">
+     <figure class="imagen-principal">
+
+						<img class="img-responsive" src="{$publicFilesDir}/{$currentJournal->_data.imgCarousel1.$currentLocale.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
+					</figure>
+    </div>
+    {/if}
+    {if $currentJournal->_data.imgCarousel2.$currentLocale.uploadName}
+    <div class="item">
+      <figure class="imagen-principal">
+
+						<img class="img-responsive" src="{$publicFilesDir}/{$currentJournal->_data.imgCarousel2.$currentLocale.uploadName|escape:"url"}" alt="">
+					</figure>
+    </div>
+    {/if}
+    {if $currentJournal->_data.imgCarousel3.$currentLocale.uploadName}
+    <div class="item">
+      <figure class="imagen-principal">
+
+						<img class="img-responsive" src="{$publicFilesDir}/{$currentJournal->_data.imgCarousel3.$currentLocale.uploadName|escape:"url"}" alt="">
+					</figure>
+    </div>
+    {/if}
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div><!-- Fin Banner-->
+
+	<!--fin-->
+
+	{**if $homepageImage}
 		<div class="homepage-image">
 			<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
 		</div>
-	{/if}
+	{/if**}
 
 	{if $journalDescription}
 		<div class="journal-description">
-			{$journalDescription}
+			{**$journalDescription**}
 		</div>
 	{/if}
 

@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Arvo';
+    src: url('Arvo-Bold.eot');
+    src: url('Arvo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Arvo-Bold.woff') format('woff'),
+        url('Arvo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('MyriadPro-Regular.eot');
+    src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MyriadPro-Regular.woff') format('woff'),
+        url('MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-bold';
+    src: url('MyriadPro-Bold.eot');
+    src: url('MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MyriadPro-Bold.woff') format('woff'),
+        url('MyriadPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+body { padding: 50px;}
+#logo{ background: url(images/logo.png) left  no-repeat; background-size: contain; width: auto; height: 80px; display: block; position: relative;}
+#bar { height: 10px; background-color: #007bc4;}
+hr {height: 3px;
+  background-color: #535e6b;}
+/*TITULOS Y SUBTITULOS DE LA PAGINA*/
+h1 {font-family: avro; font-size: 24px; line-height: 26px; color: #535e6b; text-align: left; text-transform: uppercase; }
+h2 {font-family: MyriadPro; font-size: 24px; line-height: 26px; color: #007bc4; text-align: left; }
+h3 {font-family: MyriadPro-bold; font-size: 22px; line-height: 24px; color: #a3a1a1; text-align: left; }
+h4 {font-family: MyriadPro; font-size: 20px; line-height: 22px; color: #a3a1a1; text-align: left; }
+h5 {font-family: MyriadPro; font-size: 14px; line-height: 16px; color: #00a4e0; text-align: left; }
+
+/*PARRAFOS Y CONTENIDO*/
+p {font-family: MyriadPro; font-size: 16px; line-height: 21px; color: #535e6b; text-align: justify; }
+
+small {font-family: MyriadPro; font-size: 14px; line-height: 16px; color: #a3a1a1; text-align: left; }
+
+/*ENLACES Y BOTONES*/
+a.link1 {font-family: MyriadPro; font-size: 18px; line-height: 21px; color: #00a4e0; text-align: left;-webkit-transition: color 1000ms ease-in-out;
+-moz-transition: color 1000ms ease-in-out;
+-ms-transition: color 1000ms ease-in-out;
+-o-transition: color 1000ms ease-in-out;
+transition: color 1000ms ease-in-out;}
+a.link1:hover {color:#007bc4; text-decoration: underline;-webkit-transition: color 300ms ease-in-out; cursor:pointer;
+-moz-transition: color 500ms ease-in-out;
+-ms-transition: color 500ms ease-in-out;
+-o-transition: color 500ms ease-in-out;
+transition: color 500ms ease-in-out;}
+
+a.link2 {font-family: MyriadPro; font-size: 18px; line-height: 21px; color: #535e6b; text-align: left;-webkit-transition: color 1000ms ease-in-out;
+-moz-transition: color 1000ms ease-in-out;
+-ms-transition: color 1000ms ease-in-out;
+-o-transition: color 1000ms ease-in-out;
+transition: color 1000ms ease-in-out;}
+a.link2:hover {color:#00a4e0; text-decoration: underline;-webkit-transition: color 300ms ease-in-out; cursor:pointer;
+-moz-transition: color 500ms ease-in-out;
+-ms-transition: color 500ms ease-in-out;
+-o-transition: color 500ms ease-in-out;
+transition: color 500ms ease-in-out;}
+
+a.link3 {font-family: MyriadPro; font-size: 14px; line-height: 16px; color: #a3a1a1; text-align: left;-webkit-transition: color 1000ms ease-in-out;
+-moz-transition: color 1000ms ease-in-out;
+-ms-transition: color 1000ms ease-in-out;
+-o-transition: color 1000ms ease-in-out;
+transition: color 1000ms ease-in-out;}
+a.link3:hover {color:#00a4e0; text-decoration: underline;-webkit-transition: color 300ms ease-in-out; cursor:pointer;
+-moz-transition: color 500ms ease-in-out;
+-ms-transition: color 500ms ease-in-out;
+-o-transition: color 500ms ease-in-out;
+transition: color 500ms ease-in-out;}
+
+img {opacity:1; 	-webkit-transition: all 300ms ease-in-out;
+-moz-transition: all 300ms ease-in-out;
+-ms-transition: all 300ms ease-in-out;
+-o-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out;}
+a img:hover {opacity:0.4; }
+.imglink{ background: #007bc4; position: relative; text-align: center; height: 400px; width: 600px;}
+
+input#button1 { background:#007bc4; padding: 15px; border: 0px; font-size: 16px; color:#fff; text-transform: uppercase;
+-webkit-border-radius: 5px;
+border-radius: 5px;}
+input#button1:hover {background: #00a4e0;}
+
+input#button2 { background:#FFFFFF; padding: 14px; border: 1px #007bc4 solid;font-size:16px; color:#007bc4; text-transform: uppercase;
+-webkit-border-radius: 5px;
+border-radius: 5px;}
+input#button2:hover {background: #007bc4; color:#fff;}
+
+input[type="text"] { background:#FFFFFF; padding: 14px; border: 1px #007bc4 solid;font-size:16px; color:#007bc4; text-transform: uppercase;
+-webkit-border-radius: 5px;
+	border-radius: 5px;}
+
+input[type="radio"] { display:none; }
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+input[type="radio"] + label span {
+     border: 5px solid #007bc4; background-color: #fff;
+}
+
+input[type="radio"]:checked + label span{
+     background-color:#007bc4;
+}
+
+input[type="radio"] + label {color:#007bc4; font-family:MyriadPro; font-size: 18px;}
+
+input[type="checkbox"] { display:none; }
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius: 0%;
+    border-radius:  0%;
+}
+input[type="checkbox"] + label span {
+     border: 5px solid #007bc4; background-color: #fff;
+}
+
+input[type="checkbox"]:checked + label span{
+     background-color:#007bc4;
+	
+}
+
+input[type="checkbox"] + label {color:#007bc4; font-family:MyriadPro; font-size: 18px;}
+
+#inputselect { background:#FFFFFF; height: 48px; border: 1px #007bc4 solid;font-size:16px; color:#007bc4; text-transform: uppercase;
+-webkit-border-radius: 5px;
+	border-radius: 5px; }
+
+/*MENU NAV */
+nav {font-family: MyriadPro;}
+nav ul li a { text-decoration: none;background:#007bc4; padding:20px 25px 15px 25px; position: relative; display: block; text-transform: uppercase; font-size: 16px; color:#fff;	-webkit-transition: all 300ms ease-in-out;
+-moz-transition: all 300ms ease-in-out;
+-ms-transition: all 300ms ease-in-out;
+-o-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out; }
+nav ul li { position: relative; float: left;}
+nav ul li a:hover {background: #00a4e0;}
+nav ul li a:active {background: #FFFFFF; color:#00a4e0}
+
+ul {list-style: none; margin: 0; padding: 0;}
+
+#arrowr {
+	position: relative;
+	display:block;
+     width: 0; 
+     height: 0; 
+     border-left: 35px solid #007bc4;
+     border-top: 35px solid transparent;
+     border-bottom: 35px solid transparent;
+		-webkit-transition: all 300ms ease-in-out;
+-moz-transition: all 300ms ease-in-out;
+-ms-transition: all 300ms ease-in-out;
+-o-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out;
+
+}
+#arrowr:hover {border-left: 35px solid #00a4e0}
+
+#arrowl {
+	position: relative;
+	display:block;
+     width: 0; 
+     height: 0; 
+     border-right: 35px solid #007bc4;
+     border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent; 	-webkit-transition: all 300ms ease-in-out;
+-moz-transition: all 300ms ease-in-out;
+-ms-transition: all 300ms ease-in-out;
+-o-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out;}
+#arrowl:hover {border-right: 35px solid #00a4e0}
+
+.circulo {
+	position: relative;
+	display:block;
+     width: 16px;
+     height: 16px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: transparent;
+	border: 2px #007bc4 solid;
+	-webkit-transition: all 300ms ease-in-out;
+-moz-transition: all 300ms ease-in-out;
+-ms-transition: all 300ms ease-in-out;
+-o-transition: all 300ms ease-in-out;
+transition: all 300ms ease-in-out;
+}
+.circulo:hover {
+     background: #007bc4;
+}
+.circulo:active {
+     background: #00a4e0;
+}
