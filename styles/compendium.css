@@ -88,7 +88,6 @@
   width: min-content;
   background: var(--color);
   color: white;
-  width: 35%;
   border: var(--color);
 }
 
@@ -167,7 +166,7 @@ li:hover, li > a:hover {
   line-height: 1em;
 
 }
-.phone{
+.phone_{
   border-radius: 50%;
   background: white;
   color:#535e6b;
@@ -184,8 +183,16 @@ li:hover, li > a:hover {
   width: 100%;
   max-height: 400px;
 }
+<<<<<<< HEAD
 
 .dropdown-menu{
   left: 100%;
   top: 0%;
+=======
+.page_announcements, .page_issue, .page_issue_archive, .page_about, .page_editorial_team, 
+.page_submissions, .page_contact, .page_register, .page_login, .page_lost_password, .page_search{
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+>>>>>>> 79a0346ef533ef586ba8336c0b4c4690df92d4de
 }
