@@ -1,5 +1,23 @@
 /*DECLARAR COLORES*/
-:root { --color: #007bc4; }
+
+@font-face {
+    font-family: 'Arvo';
+    src: url('Arvo-Bold.woff');
+}
+
+@font-face {
+    font-family: 'MyriadProB';
+    src: url('MyriadPro-Bold.woff');
+}
+
+@font-face {
+    font-family: 'MyriadProR';
+    src: url('MyriadPro-Regular.woff');
+}
+
+:root { --color: #007bc4;
+        --gray: #535e6b;
+}
 
 .left{
   float: left;
@@ -21,6 +39,7 @@
 }
 .register{
   color: var(--color) !important;
+
 }
 #main-navigation > li{
   float: none;
@@ -37,4 +56,38 @@
 
 .navbar-brand-logo img{
   max-height: none;
+}
+
+.btn-default, .form-control{
+  float: left;
+}
+.form-control{
+  border: 2px var(--color) solid !important;
+  width: 100% !important;
+}
+
+.form-group{
+  width: 65%;
+}
+
+.btn-default{
+  width: min-content;
+  background: var(--color);
+  color: white;
+  width: 35%;
+  border: var(--color);
+}
+
+.navbar-form{
+  background-color: #535e6b;
+  margin: 0;
+  padding: 10% 10% 10% 10%;
+}
+
+.navbar-collapse{
+  padding: 0;
+}
+
+.btn-default, li{
+  
 }
