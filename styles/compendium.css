@@ -16,6 +16,7 @@
 }
 
 :root { --color: #007bc4;
+        --color-light: #00a4e0;
         --gray: #535e6b;
 }
 
@@ -51,7 +52,7 @@
 #main-navigation{
   background-color: var(--color);
   color: white !important;
-  height: 120vh;
+  height: 135vh;
   width: 235px;
 }
 .navbar-brand-logo img{
@@ -117,6 +118,7 @@ margin: 1em;
   margin: 0;
   width: 100%;
   padding: 0;
+  margin-bottom: 175px;
 }
 .pkp_structure_main{
   width: calc( 100% - 235px);
@@ -137,10 +139,53 @@ color:#007bc4;
 .footer{
   position: fixed;
   bottom: 0;
-  height: 150px;
+  height: 175px;
+  margin-top: 0 !important;
   width: 100%;
 }
 
-li:hover{
-  background-color: pink;
+a{
+  text-align: center;
+}
+
+li:hover, li > a:hover {
+  background-color: var(--color-light) !important;
+}
+
+.footer p{
+  font-size: .9em;
+  margin-bottom: .1em;
+  color: white;
+
+}
+.img-logo{
+  float:right;
+}
+
+.telefono{
+  margin-top: 2em;
+  line-height: 1em;
+
+}
+.phone{
+  border-radius: 50%;
+  background: white;
+  color:#535e6b;
+  font-size: 1.7em;
+  width: 1.7em;
+  line-height: 1.7em;
+  text-align: center;
+  height: 1.7em;
+}
+.num-tel{
+  margin-left: 1em;
+}
+.carousel .img-responsive{
+  width: 100%;
+  max-height: 400px;
+}
+
+.dropdown-menu{
+  left: 100%;
+  top: 0%;
 }
