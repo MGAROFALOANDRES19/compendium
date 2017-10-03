@@ -1,17 +1,26 @@
 /*DECLARAR COLORES*/
+:root { --color: #007bc4; }
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
 
 .navbar-default{
   background-color: white;
 }
  .login{
-   background: mediumblue;
+   background: var(--color);
    color: white !important;
  }
 .nav-pills{
   margin-top: 50px;
 }
 .register{
-  color: mediumblue !important;
+  color: var(--color) !important;
 }
 #main-navigation > li{
   float: none;
@@ -21,7 +30,11 @@
 }
 
 #main-navigation{
-  background-color: mediumblue;
+  background-color: var(--color);
   color: white !important;
   height: 100vh;
+}
+
+.navbar-brand-logo img{
+  max-height: none;
 }

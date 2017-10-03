@@ -40,7 +40,7 @@
 		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
 
 			{* User profile, login, etc, navigation menu*}
-			<div class="container-fluid">
+			<div class="container-fluid right">
 				<div class="row">
 					<ul id="navigationUser" class="nav nav-pills tab-list pull-right" role="navigation" aria-label="{translate|escape key="common.navigation.user"}">
 						{if $isUserLoggedIn}
@@ -98,7 +98,7 @@
 				</div><!-- .row -->
 			</div><!-- .container-fluid -->
 
-			<div class="container-fluid">
+			<div class="container-fluid left">
 
 				<div class="navbar-header">
 
@@ -151,4 +151,3 @@
 		{* Wrapper for page content and sidebars *}
 		<div class="pkp_structure_content container">
 			<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">
-
