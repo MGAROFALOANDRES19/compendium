@@ -34,7 +34,7 @@
           {$pageFooter}
 
 
-          <p class="telefono"> <span class="glyphicon glyphicon-earphone phone" aria-hidden="true"></span> 
+          <p class="telefono"> <span class="glyphicon glyphicon-earphone phone_" aria-hidden="true"></span> 
             <span class="num-tel">(04) 2269061 / (04) 2269007</span></p>
 
         </div>
