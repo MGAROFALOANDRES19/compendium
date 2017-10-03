@@ -32,10 +32,10 @@
 }
  .login{
    background: var(--color);
-   color: white !important;
+  color: white !important;
+  padding: 10px 35px !important;
  }
 .nav-pills{
-  margin-top: 50px;
 }
 .register{
   color: var(--color) !important;
@@ -51,11 +51,24 @@
 #main-navigation{
   background-color: var(--color);
   color: white !important;
-  height: 100vh;
+  height: 120vh;
+  width: 235px;
 }
-
 .navbar-brand-logo img{
   max-height: none;
+  width: 450px;
+  
+}
+.navbar-default, .header_view{
+  border:none;
+  margin-top: 1.5em;
+  padding: 0 3em 1em;
+}
+.navbar-header .site-name{
+  margin: auto;
+}
+.site-name a{
+  padding: 0;
 }
 
 .btn-default, .form-control{
@@ -90,4 +103,40 @@
 
 .btn-default, li{
   
+}
+
+.password-recovery{
+margin: 1em;
+}
+.linea{
+  height: 8px;
+  background:#007bc4; 
+  width:100%;
+}
+.container {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+.pkp_structure_main{
+  width: calc( 100% - 235px);
+  padding: 0;
+  
+}
+.current_issue{
+  padding: 0px 70px;
+}
+
+.glyphicon-chevron-right:before,.glyphicon-chevron-left:before{
+color:#007bc4;
+}
+.galley-link{
+  width: auto;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
 }

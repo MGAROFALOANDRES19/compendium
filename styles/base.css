@@ -29,10 +29,8 @@
 }
 
 
-
-body { padding: 50px;}
-#logo{ background: url(images/logo.png) left  no-repeat; background-size: contain; width: auto; height: 80px; display: block; position: relative;}
-#bar { height: 10px; background-color: #007bc4;}
+/*#logo{ background: url(images/logo.png) left  no-repeat; background-size: contain; width: auto; height: 80px; display: block; position: relative;}
+#bar { height: 10px; background-color: #007bc4;}*/
 hr {height: 3px;
   background-color: #535e6b;}
 /*TITULOS Y SUBTITULOS DE LA PAGINA*/

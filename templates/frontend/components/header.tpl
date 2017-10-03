@@ -96,6 +96,14 @@
 						{/if}
 					</ul>
 				</div><!-- .row -->
+				<div class="row">
+					
+					<a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="lostPassword"}">
+											¿Haz olvidado tu contraseña?{*translate key="user.logOut"*}
+										</a>
+					<!--<a href="#" class="password-recovery">¿Haz olvidado tu contraseña?</a>-->
+
+				</div>
 			</div><!-- .container-fluid -->
 
 			<div class="container-fluid left">
@@ -147,6 +155,7 @@
 
 				</div><!-- .pkp_head_wrapper -->
 		</header><!-- .pkp_structure_head -->
+		<div class="linea"></div>
     	{include file="frontend/components/primaryNavMenu.tpl"}
 		{* Wrapper for page content and sidebars *}
 		<div class="pkp_structure_content container">
