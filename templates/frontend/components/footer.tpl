@@ -24,7 +24,6 @@
 		{/if}
 	{/if}
   </div><!-- pkp_structure_content -->
-
   <footer class="footer" role="contentinfo">
 
   	<div class="container">
@@ -33,19 +32,26 @@
     		{if $pageFooter}
         <div class="col-md-8">
           {$pageFooter}
+
+
+          <p class="telefono"> <span class="glyphicon glyphicon-earphone phone" aria-hidden="true"></span> 
+            <span class="num-tel">(04) 2269061 / (04) 2269007</span></p>
+
         </div>
     		{/if}
 
     		<div class="col-md-4" role="complementary" aria-label="{translate|escape key="about.aboutThisPublishingSystem"}">
     			<a href="{url page="about" op="aboutThisPublishingSystem"}">
-    				<img alt="{translate key=$packageKey}" src="{$baseUrl}/{$brandImage}">
+    				<!--<img alt="{translate key=$packageKey}" src="{$baseUrl}/{$brandImage}">-->
+            <img src="{$baseUrl}/plugins/themes/compendium/images/logo-espol_0_0.png" class="img-logo">
     			</a>
-    			<a href="{$pkpLink}">
+    			<!--<a href="{$pkpLink}">
     				<img alt="{translate key="common.publicKnowledgeProject"}" src="{$baseUrl}/lib/pkp/templates/images/pkp_brand.png">
-    			</a>
+    			</a>-->
     		</div>
 
       </div> <!-- .row -->
+      
   	</div><!-- .container -->
   </footer>
 </div><!-- pkp_structure_page -->
