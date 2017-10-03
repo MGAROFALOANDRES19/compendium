@@ -57,7 +57,7 @@
 .navbar-brand-logo img{
   max-height: none;
   width: 450px;
-  
+
 }
 .navbar-default, .header_view{
   border:none;
@@ -102,7 +102,7 @@
 }
 
 .btn-default, li{
-  
+
 }
 
 .password-recovery{
@@ -110,7 +110,7 @@ margin: 1em;
 }
 .linea{
   height: 8px;
-  background:#007bc4; 
+  background:#007bc4;
   width:100%;
 }
 .container {
@@ -121,7 +121,7 @@ margin: 1em;
 .pkp_structure_main{
   width: calc( 100% - 235px);
   padding: 0;
-  
+
 }
 .current_issue{
   padding: 0px 70px;
@@ -139,4 +139,8 @@ color:#007bc4;
   bottom: 0;
   height: 150px;
   width: 100%;
+}
+
+li:hover{
+  background-color: pink;
 }
