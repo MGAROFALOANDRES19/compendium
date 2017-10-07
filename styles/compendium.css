@@ -54,7 +54,7 @@
 #main-navigation{
   background-color: var(--color);
   color: white !important;
-  height: 140vh;
+  height: calc(100vh - 58px);
   width: 235px;
 }
 .navbar-brand-logo img{
@@ -212,11 +212,62 @@ li:hover, li > a:hover {
   left: 100%;
   top: 0%;
 }
+
+.compendium-numero-actual{
+    display: -webkit-flex; 
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+     -webkit-flex-wrap: wrap; 
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+     flex-wrap: wrap; 
+         flex-wrap: nowrap;
+}
+.compendium-numero-actual .info-actual{
+      width: auto;
+    -ms-align-self: flex-start;
+    align-self: flex-start;
+}
+.cover img {
+  max-width: none !important;
+    width: 200px;
+}
+.compendium-publicaciones{
+  margin-left: 23px;
+}
+
 .page_announcements, .page_issue, .page_issue_archive, .page_about, .page_editorial_team, 
 .page_submissions, .page_contact, .page_register, .page_login, .page_lost_password, .page_search{
   width: 100%;
   margin: 0 auto;
   padding: 20px;
+}
+.issues-compendium .media-left{
+      display: initial;
+      padding: 0;
+}
+.issues-compendium img{
+ width: 200px;
+ max-width: none;
+}
+.issues-compendium{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.issues-compendium .issue-summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        flex: 0 1 32%;
+    margin: 0 0.66%;
+}
+
+.issues-compendium .series{
+  text-align: center;
 }
 
 @media (min-width: 1301px) {

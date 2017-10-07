@@ -22,6 +22,13 @@
 				<img class="media-object" src="{$issue->getLocalizedCoverImageUrl()}">
 			</a>
 		</div>
+	{else}
+	<div class="media-left">
+			<a class="cover" href="{url op="view" path=$issue->getBestIssueId($currentJournal)}">
+				<img src="{$baseUrl}/plugins/themes/compendium/images/default.jpg" class="img-logo">
+			</a>
+		</div>
+	
 	{/if}
 
 

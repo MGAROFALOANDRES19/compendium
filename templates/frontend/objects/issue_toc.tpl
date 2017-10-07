@@ -14,7 +14,7 @@
  * @uses $hasAccess bool Can this user access galleys for this context?
  * @uses $showGalleyLinks bool Show galley links to users without access?
  *}
-<div class="issue-toc">
+<div class="issue-toc compendium-numero-actual">
 
 	{* Indicate if this is only a preview *}
 	{if !$issue->getPublished()}
@@ -22,7 +22,7 @@
 	{/if}
 
 	{* Issue introduction area above articles *}
-	<div class="heading row">
+	<div class="heading row info-actual">
 		{assign var="issueDetailsCol" value="12"}
 
 		{* Issue cover image and description*}
@@ -31,7 +31,7 @@
 			{assign var="issueDetailsCol" value="8"}
 			<div class="thumbnail col-md-4">
 				<a class="cover" href="{url op="view" page="issue" path=$issue->getBestIssueId()}">
-					<img class="img-responsive" src="{$issueCover|escape}"{if $issue->getLocalizedCoverImageAltText() != ''} alt="{$issue->getLocalizedCoverImageAltText()|escape}"{/if}>
+					<img class="" src="{$issueCover|escape}"{if $issue->getLocalizedCoverImageAltText() != ''} alt="{$issue->getLocalizedCoverImageAltText()|escape}"{/if}>
 				</a>
 			</div>
 		{/if}
@@ -70,12 +70,12 @@
 
 			{* Published date *}
 			{if $issue->getDatePublished()}
-				<p class="published">
+				<!--<p class="published">
 					<strong>
 						{translate key="submissions.published"}:
 					</strong>
 					{$issue->getDatePublished()|date_format:$dateFormatShort}
-				</p>
+				</p>-->
 			{/if}
 		</div>
 	</div>
@@ -97,7 +97,7 @@
 	{/if}
 
 	{* Articles *}
-	<div class="sections">
+	<div class="sections compendium-publicaciones">
 		{foreach name=sections from=$publishedArticles item=section}
 			<section class="section">
 				{if $section.articles}

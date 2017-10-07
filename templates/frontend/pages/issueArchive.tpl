@@ -29,7 +29,7 @@
 	{else}
 
 		{* List issues *}
-		<div class="issues media-list">
+		<div class="issues-compendium media-list">
 			{iterate from=issues item=issue}
 				{include file="frontend/objects/issue_summary.tpl"}
 			{/iterate}
