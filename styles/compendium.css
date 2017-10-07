@@ -140,7 +140,6 @@ margin: 1em;
   margin: 0;
   width: 100%;
   padding: 0;
-  margin-bottom: 175px;
 }
 .pkp_structure_main{
   width: calc( 100% - 235px);
@@ -241,7 +240,8 @@ li:hover, li > a:hover {
 }
 
 .page_announcements, .page_issue, .page_issue_archive, .page_about, .page_editorial_team, 
-.page_submissions, .page_contact, .page_register, .page_login, .page_lost_password, .page_search{
+.page_submissions, .page_contact, .page_register, .page_login, .page_lost_password, .page_search,
+.page_announcement{
   width: 100%;
   margin: 0 auto;
   padding: 20px;
@@ -275,7 +275,7 @@ li:hover, li > a:hover {
   position: absolute;
     top: 50%;
     margin-top: -10px;
-    z-index: 5;
+    z-index: 2;
     display: inline-block;
 }
 .glyphicon-triangle-left{

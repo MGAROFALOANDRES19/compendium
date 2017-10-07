@@ -1,7 +1,7 @@
 var menu = document.getElementById('main-navigation');
 
 var main = $("#main-content");
-console.log(main);
+//console.log(main);
 
 var menuPosition = menu.getBoundingClientRect().top;
 window.addEventListener('scroll', function() {

@@ -24,6 +24,11 @@
 		margin-top: -7em;
 	}
 }
+@media (min-width: 540px){
+	.current_issue{
+	  margin-bottom: 175px;
+	}
+}
 @media (max-width: 539px){
 	.footer{
 		height: 265px;
@@ -44,6 +49,9 @@
 	.issues-compendium .issue-summary {
 		    flex: 1 1 46%;
     margin: 0 2%;
+	}
+	.compendium-publicaciones{
+		margin-left: 0;
 	}
 
 }
