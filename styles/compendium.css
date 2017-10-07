@@ -241,7 +241,7 @@ li:hover, li > a:hover {
 
 .page_announcements, .page_issue, .page_issue_archive, .page_about, .page_editorial_team, 
 .page_submissions, .page_contact, .page_register, .page_login, .page_lost_password, .page_search,
-.page_announcement{
+.page_announcement, .page_article{
   width: 100%;
   margin: 0 auto;
   padding: 20px;
