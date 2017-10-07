@@ -47,12 +47,14 @@
 }
 #main-navigation > li > a{
   color: white !important;
+  text-transform: uppercase;
 }
+.dropdown-menu a{ text-transform: uppercase; }
 
 #main-navigation{
   background-color: var(--color);
   color: white !important;
-  height: 135vh;
+  height: 140vh;
   width: 235px;
 }
 .navbar-brand-logo img{
@@ -85,10 +87,31 @@
 }
 
 .btn-default{
-  width: min-content;
+  /*width: min-content;
   background: var(--color);
   color: white;
-  border: var(--color);
+  border: var(--color);*/
+}
+
+.galley-link{
+      display: inline-block;
+    padding: 0 1em;
+    background: #fff;
+    border: 1px solid #007bc4;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 28px;
+    color: #007bc4;
+    text-decoration: none;
+    margin-right: 1em;
+}
+.galley-link:hover, .galley-link:focus {
+    background: #007bc4;
+    color: #fff;
+}
+
+.journal-description{
+  padding: 0 70px;
 }
 
 .navbar-form{
@@ -131,16 +154,15 @@ margin: 1em;
 .glyphicon-chevron-right:before,.glyphicon-chevron-left:before{
 color:#007bc4;
 }
-.galley-link{
-  width: auto;
-}
 
 .footer{
   position: fixed;
   bottom: 0;
-  height: 175px;
+  height: 150px;
   margin-top: 0 !important;
   width: 100%;
+  background-color: #535e6b !important;
+  border-bottom: 8px solid #007bc4;
 }
 
 a{
@@ -155,6 +177,7 @@ li:hover, li > a:hover {
   font-size: .9em;
   margin-bottom: .1em;
   color: white;
+  
 
 }
 .img-logo{
@@ -183,16 +206,25 @@ li:hover, li > a:hover {
   width: 100%;
   max-height: 400px;
 }
-<<<<<<< HEAD
+
 
 .dropdown-menu{
   left: 100%;
   top: 0%;
-=======
+}
 .page_announcements, .page_issue, .page_issue_archive, .page_about, .page_editorial_team, 
 .page_submissions, .page_contact, .page_register, .page_login, .page_lost_password, .page_search{
   width: 100%;
   margin: 0 auto;
   padding: 20px;
->>>>>>> 79a0346ef533ef586ba8336c0b4c4690df92d4de
+}
+
+@media (min-width: 1301px) {
+  .pkp_structure_main {
+    padding: 0 10px;
+  }
+  .carousel .img-responsive{
+    min-height: 500px;
+  }
+
 }

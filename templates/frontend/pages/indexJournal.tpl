@@ -115,7 +115,7 @@
 
 	{if $journalDescription}
 		<div class="journal-description">
-			{**$journalDescription**}
+			{$journalDescription}
 		</div>
 	{/if}
 
@@ -141,6 +141,7 @@
 
 	{* Latest issue *}
 	{if $issue}
+
 		<section class="current_issue">
 			<header class="page-header">
 				<h2>
@@ -167,3 +168,5 @@
 </div><!-- .page -->
 
 {include file="frontend/components/footer.tpl"}
+
+
