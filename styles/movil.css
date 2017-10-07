@@ -9,7 +9,15 @@
 		width: 100%;
 		height: inherit;
 		margin:0;
+		background: #007bc4 !important;
 	}
+	.telefono{
+		margin-top: 0;
+	}
+}
+@media (min-width: 767px){
+
+	
 }
 @media (max-width: 992px){
 	.img-logo{
@@ -24,7 +32,7 @@
 	}
 	.img-logo{
 		float: none;
-		margin-top: .3em;
+		margin-top: 1.5em;
 		
 	}
 	.container{
@@ -32,6 +40,10 @@
 	}
 	.row{
 		margin: 0;
+	}
+	.issues-compendium .issue-summary {
+		    flex: 1 1 46%;
+    margin: 0 2%;
 	}
 
 }

@@ -163,6 +163,7 @@ color:#007bc4;
   width: 100%;
   background-color: #535e6b !important;
   border-bottom: 8px solid #007bc4;
+  z-index: 5;
 }
 
 a{
@@ -291,7 +292,9 @@ li:hover, li > a:hover {
 .carousel-control{
   opacity: 1;
 }
-
+.navbar-form {
+  border:none;
+}
 @media (min-width: 1301px) {
   .pkp_structure_main {
     padding: 0 10px;
