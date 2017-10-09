@@ -20,6 +20,7 @@
         --gray: #535e6b;
 }
 
+
 .left{
   float: left;
 }
@@ -49,6 +50,11 @@
   color: white !important;
   text-transform: uppercase;
 }
+
+#main-navigation > li > a:focus{
+  color: var(--color) !important;
+}
+
 .dropdown-menu a{ text-transform: uppercase; }
 
 #main-navigation{
@@ -77,9 +83,18 @@
 .btn-default, .form-control{
   float: left;
 }
+
+.btn-default{
+  border: var(--color);
+  background: var(--color);
+  color: white;
+  border-radius: 5px 0px 0px 5px;
+}
 .form-control{
+  border-radius: 5px 0px 0px 5px;
   border: 2px var(--color) solid !important;
   width: 100% !important;
+  margin-top: -1px;
 }
 
 .form-group{
@@ -177,7 +192,7 @@ li:hover, li > a:hover {
   font-size: .9em;
   margin-bottom: .1em;
   color: white;
-  
+
 
 }
 .img-logo{
@@ -214,16 +229,16 @@ li:hover, li > a:hover {
 }
 
 .compendium-numero-actual{
-    display: -webkit-flex; 
+    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-     -webkit-flex-wrap: wrap; 
+     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
-     flex-wrap: wrap; 
+     flex-wrap: wrap;
          flex-wrap: nowrap;
 }
 .compendium-numero-actual .info-actual{
@@ -239,7 +254,7 @@ li:hover, li > a:hover {
   margin-left: 23px;
 }
 
-.page_announcements, .page_issue, .page_issue_archive, .page_about, .page_editorial_team, 
+.page_announcements, .page_issue, .page_issue_archive, .page_about, .page_editorial_team,
 .page_submissions, .page_contact, .page_register, .page_login, .page_lost_password, .page_search,
 .page_announcement, .page_article{
   width: 100%;
@@ -295,6 +310,8 @@ li:hover, li > a:hover {
 .navbar-form {
   border:none;
 }
+
+
 @media (min-width: 1301px) {
   .pkp_structure_main {
     padding: 0 10px;
