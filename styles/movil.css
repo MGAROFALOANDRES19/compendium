@@ -16,9 +16,7 @@
 	}
 
 	header > .right{
-		position: absolute;
-    top: 60%;
-    left: 6%;
+		float: left;
 	}
 
 	.mynavbar{
@@ -46,6 +44,26 @@
 		display: none;
 	}
 
+	header > .pull-md-right{
+	  display: block;
+	}
+
+	.pull-md-right{
+		float: right;
+	}
+
+	.pull-md-right > form{
+		background: transparent;
+	}
+
+	header > .pull-md-right >form > button{
+		display: none;
+	}
+
+	.pull-md-right > .navbar-form{
+		float: left;
+		padding: 0;
+	}
 }
 @media (min-width: 767px){
 

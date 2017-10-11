@@ -156,6 +156,8 @@
 			</div><!-- .container-fluid -->
       {if !$noContextsConfigured}
         <div class="pull-md-right">
+
+          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
           {include file="frontend/components/searchForm_simple.tpl"}
         </div>
       {/if}
