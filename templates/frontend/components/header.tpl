@@ -154,7 +154,11 @@
 
 				</div>
 			</div><!-- .container-fluid -->
-
+      {if !$noContextsConfigured}
+        <div class="pull-md-right">
+          {include file="frontend/components/searchForm_simple.tpl"}
+        </div>
+      {/if}
 
 		</header><!-- .pkp_structure_head -->
 		<div class="linea"></div>
