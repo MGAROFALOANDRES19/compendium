@@ -311,6 +311,22 @@ li:hover, li > a:hover {
   border:none;
 }
 
+.mynavbar{
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.mynavbar > .container-fluid{
+  padding: 0
+}
+
+.left > nav {
+  display: none;
+}
+
+.mynavbar .navbar-header{
+  display: none;
+}
 
 @media (min-width: 1301px) {
   .pkp_structure_main {

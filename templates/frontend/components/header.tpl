@@ -97,7 +97,7 @@
 					</ul>
 				</div><!-- .row -->
 				<div class="row">
-					
+
 					<a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="lostPassword"}">
 											¿Haz olvidado tu contraseña?{*translate key="user.logOut"*}
 										</a>
@@ -152,8 +152,9 @@
 					{/if}
 
 				</div>
-
+        {include file="frontend/components/primaryNavMenu.tpl"}
 				</div><!-- .pkp_head_wrapper -->
+
 		</header><!-- .pkp_structure_head -->
 		<div class="linea"></div>
     	{include file="frontend/components/primaryNavMenu.tpl"}

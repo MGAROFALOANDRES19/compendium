@@ -7,7 +7,7 @@
 *
 * Primary navigation menu list for OJS
 *}
-<nav class="navbar navbar-default">
+<nav class="mynavbar navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -17,7 +17,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
+        <img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

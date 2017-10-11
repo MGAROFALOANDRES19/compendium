@@ -21,9 +21,27 @@
     left: 6%;
 	}
 
-	header > .left{
-		margin-bottom: 20%;
+	.mynavbar{
+		float: right;
+		width: 100%;
 	}
+
+	.pkp_structure_page > .mynavbar{
+		display: none;
+	}
+
+	.site-name img{
+		display: none;
+	}
+
+	.mynavbar .navbar-header{
+	  display: block;
+	}
+
+	.left > nav {
+	  display: block;
+	}
+
 }
 @media (min-width: 767px){
 
