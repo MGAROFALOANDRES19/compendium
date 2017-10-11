@@ -42,6 +42,10 @@
 	  display: block;
 	}
 
+	.left > .navbar-header{
+		display: none;
+	}
+
 }
 @media (min-width: 767px){
 

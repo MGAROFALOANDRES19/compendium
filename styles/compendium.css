@@ -328,6 +328,10 @@ li:hover, li > a:hover {
   display: none;
 }
 
+.navbar-toggle{
+  margin-top: 38px;
+}
+
 @media (min-width: 1301px) {
   .pkp_structure_main {
     padding: 0 10px;
