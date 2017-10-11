@@ -14,10 +14,20 @@
 	.telefono{
 		margin-top: 0;
 	}
+
+	header > .right{
+		position: absolute;
+    top: 60%;
+    left: 6%;
+	}
+
+	header > .left{
+		margin-bottom: 20%;
+	}
 }
 @media (min-width: 767px){
 
-	
+
 }
 @media (max-width: 992px){
 	.img-logo{
@@ -38,7 +48,7 @@
 	.img-logo{
 		float: none;
 		margin-top: 1.5em;
-		
+
 	}
 	.container{
 		margin-bottom: 0;
