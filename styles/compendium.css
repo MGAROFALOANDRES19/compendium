@@ -336,6 +336,11 @@ header > .pull-md-right{
   display: none;
 }
 
+.icon-search{
+  display: none;
+}
+
+
 @media (min-width: 1301px) {
   .pkp_structure_main {
     padding: 0 10px;

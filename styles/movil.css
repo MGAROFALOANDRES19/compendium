@@ -56,14 +56,25 @@
 		background: transparent;
 	}
 
-	header > .pull-md-right >form > button{
+	header > .pull-md-right >form > .none{
 		display: none;
 	}
 
 	.pull-md-right > .navbar-form{
-		float: left;
 		padding: 0;
 	}
+	.pull-md-right, .right{
+		margin-top: 20px;
+	}
+
+	.icon-search{
+		display: block;
+	}
+
+	.form-group{
+		float: left;
+	}
+
 }
 @media (min-width: 767px){
 
