@@ -7,7 +7,7 @@
 *
 * Primary navigation menu list for OJS
 *}
-<nav class="mynavbar navbar navbar-default">
+<nav id="nav-main-menu" class="mynavbar navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">

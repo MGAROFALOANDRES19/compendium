@@ -45,16 +45,13 @@
 						</a>
 					{/if}
 				</div>
-			{/if}
-
-			{* Article Galleys *}
-			{if $article->getGalleys()}
-				<div class="download">
-					{foreach from=$article->getGalleys() item=galley}
-						{include file="frontend/objects/galley_link.tpl" parent=$article}
-					{/foreach}
+			{else}
+			<div class="cover-image">
+					<img src="{$baseUrl}/plugins/themes/compendium/images/default.jpg">
 				</div>
 			{/if}
+
+			
 
 			<div class="list-group">
 
@@ -139,32 +136,60 @@
 				{* Screen-reader heading for easier navigation jumps *}
 				<h2 class="sr-only">{translate key="plugins.themes.bootstrap3.article.details"}</h2>
 
-				{* Citation formats *}
+<!--
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+-->
 				{if $citationPlugins|@count}
-					<div class="panel panel-default citation_formats">
-						<div class="panel-heading">
-							{translate key="submission.howToCite"}
-						</div>
-						<div class="panel-body">
+				<div id="panel-pdf" class="panel panel-default panel-pdf">
+							<div class="panel-heading">
+								PDF / Exportar
+							</div>
 
-							{* Output the first citation format *}
-							{foreach from=$citationPlugins name="citationPlugins" item="citationPlugin"}
-								<div id="citationOutput" class="citation_output">
-									{$citationPlugin->fetchCitation($article, $issue, $currentContext)}
-								</div>
-								{php}break;{/php}
-							{/foreach}
+
+
+<div class="panel-body">
+
+					<div class="dropdown">
+						
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Exportar
+							<span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-citation">
+							
 
 							{* Output list of all citation formats *}
-							<div class="list-group citation_format_options">
+							
 								{foreach from=$citationPlugins name="citationPlugins" item="citationPlugin"}
 									{capture assign="citationUrl"}{url page="article" op="cite" path=$article->getBestArticleId()}/{$citationPlugin->getName()|escape}{/capture}
-									<a class="list-group-item {$citationPlugin->getName()|escape}" href="{$citationUrl}"{if !$citationPlugin->isDownloadable()} data-load-citation="true"{/if} target="_blank">{$citationPlugin->getCitationFormatName()|escape}</a>
+									<li><a class="list-group-item {$citationPlugin->getName()|escape}" href="{$citationUrl}"{if !$citationPlugin->isDownloadable()} data-load-citation="true"{/if} target="_blank">{$citationPlugin->getCitationFormatName()|escape}</a></li>
 								{/foreach}
-							</div>
+							</ul>
 						</div>
+
+
+{* Article Galleys *}
+			{if $article->getGalleys()}
+				<div class="download">
+					{foreach from=$article->getGalleys() item=galley}
+						{include file="frontend/objects/galley_link.tpl" parent=$article}
+					{/foreach}
+				</div>
+			{/if}
+
 					</div>
+				</div>
 				{/if}
+
+
+
+				{* Citation formats *}
 
 				{* PubIds (requires plugins) *}
 				{foreach from=$pubIdPlugins item=pubIdPlugin}
@@ -220,14 +245,14 @@
 				</div>
 
 				{if $section}
-					<div class="panel panel-default section">
+					<!--<div class="panel panel-default section">
 						<div class="panel-heading">
 							{translate key="section.section"}
 						</div>
 						<div class="panel-body">
 							{$section->getLocalizedTitle()|escape}
 						</div>
-					</div>
+					</div>-->
 				{/if}
 
 				{* Licensing info *}

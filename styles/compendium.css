@@ -57,7 +57,18 @@
 
 .dropdown-menu a{ text-transform: uppercase; }
 
-#main-navigation{
+.fixed-menu{
+  position: fixed;
+  top:0;
+}
+.fixed-item{
+  position: fixed;
+  top:0;
+  width: 49.5%;
+}
+
+#nav-main-menu{
+  position: relative;
   background-color: var(--color);
   color: white !important;
   height: 100vh;
@@ -156,6 +167,9 @@ margin: 1em;
   width: 100%;
   padding: 0;
 }
+#content-main_{
+  min-height: calc( 100vh - 74px);
+}
 .pkp_structure_main{
   width: calc( 100% - 235px);
   padding: 0;
@@ -226,6 +240,15 @@ li:hover, li > a:hover {
 .dropdown-menu{
   left: 100%;
   top: 0%;
+}
+.dropdown-menu-citation{
+  left: 0;
+  top:100%;
+}
+
+.dropdown-menu-citation .list-group-item {
+
+  border: none;
 }
 
 .compendium-numero-actual{
@@ -340,6 +363,16 @@ header > .pull-md-right{
   display: none;
 }
 
+.article-sidebar .cover-image img{
+  margin: 0 auto;
+}
+.article-sidebar {
+  text-align: center;
+}
+
+
+.panel-pdf{
+}
 
 @media (min-width: 1301px) {
   .pkp_structure_main {
