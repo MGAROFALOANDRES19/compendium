@@ -75,7 +75,7 @@ class CompendiumThemePlugin extends ThemePlugin {
 
 		// Load Bootstrap
 		$this->addScript('bootstrap', 'bootstrap/js/bootstrap.min.js');
-		$this->addScript('main-js', 'bootstrap/js/main.js');
+		//$this->addScript('main-js', 'bootstrap/js/main.js');
 	}
 
 	/**
