@@ -119,3 +119,9 @@
 	}
 
 }
+@media (max-width: 830px){
+	.compendium-numero-actual{
+		display: flex;
+		flex-direction: column;
+	}
+}

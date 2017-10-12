@@ -266,8 +266,8 @@ li:hover, li > a:hover {
 }
 .compendium-numero-actual .info-actual{
       width: auto;
-    -ms-align-self: flex-start;
-    align-self: flex-start;
+    -ms-align-self: center;
+    align-self: center;
 }
 .cover img {
   max-width: none !important;
