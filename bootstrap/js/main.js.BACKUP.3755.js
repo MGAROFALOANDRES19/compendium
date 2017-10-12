@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+var menu = document.getElementById('mynavbar');
+=======
 //var menu = document.getElementById('main-navigation');
 
 $(document).ready(function(){
@@ -6,7 +9,7 @@ $(document).ready(function(){
 
 	/*
 	var menu_ = $("#nav-main-menu");
-
+	
 	var menu1 = $(".mynavbar");*/
 
 
@@ -21,7 +24,7 @@ $(document).ready(function(){
 		var panelPosition = panel.getBoundingClientRect().top;
 
 	var main = $(".mynavbar")
-
+	
 	window.addEventListener('scroll', function() {
 
 		//console.log("window "+window.pageYOffset)
@@ -42,9 +45,9 @@ $(document).ready(function(){
 		}
 		if (window.pageYOffset >= menuPosition  && $(window).width()>= 767) {
 			//console.log("Hola");
-
-
-
+			
+			
+			
 			content.css("margin-left", "235px");
 			//content.css("width", "100%")
 
@@ -70,10 +73,11 @@ $(document).ready(function(){
 
 	});
 
-
+	
 });
 
 //var menu = $("#nav-main")[0];
+>>>>>>> bbc1749c8c3c2c901c1734df51b304c1bcf03844
 
 //console.log(main);
 
@@ -82,6 +86,15 @@ $(document).ready(function(){
 //var menuPosition = menu.getBoundingClientRect().top;
 
 
+<<<<<<< HEAD
+	console.log("window "+window.pageYOffset)
+	console.log("menu: "+menuPosition)
+	//console.log("ancho: "+$(window).width()  767px)
+    if (window.pageYOffset >= 200) {
+        menu.style.position = 'fixed';
+        menu.style.top = '0px';
+       // main.css("margin-left", "235px");
+=======
 /*$("#nav-main").css({
         	"position": "fixed",
         	"top": "0",
@@ -92,9 +105,11 @@ $(".telefono").css("width", "1000px");*/
 	//console.log("ancho: "+$(window).width()  767px)
     /*if (window.pageYOffset >= menuPosition  && $(window).width()>= 767) {
         //menu.style.position = 'fixed';
+        
 
-
+        
         //main.css("margin-left", "235px");
+>>>>>>> bbc1749c8c3c2c901c1734df51b304c1bcf03844
         //main.css("width", "100%");
         //main.css("background", "red");
         console.log("ok"+menuPosition);
@@ -104,4 +119,9 @@ $(".telefono").css("width", "1000px");*/
         menu.style.zIndex = "3";
         //main.css("margin-left", "0");
         //main.css("background", "green");
+<<<<<<< HEAD
+    }
+});
+=======
     }*/
+>>>>>>> bbc1749c8c3c2c901c1734df51b304c1bcf03844

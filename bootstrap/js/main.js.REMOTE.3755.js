@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	/*
 	var menu_ = $("#nav-main-menu");
-
+	
 	var menu1 = $(".mynavbar");*/
 
 
@@ -21,7 +21,7 @@ $(document).ready(function(){
 		var panelPosition = panel.getBoundingClientRect().top;
 
 	var main = $(".mynavbar")
-
+	
 	window.addEventListener('scroll', function() {
 
 		//console.log("window "+window.pageYOffset)
@@ -42,9 +42,9 @@ $(document).ready(function(){
 		}
 		if (window.pageYOffset >= menuPosition  && $(window).width()>= 767) {
 			//console.log("Hola");
-
-
-
+			
+			
+			
 			content.css("margin-left", "235px");
 			//content.css("width", "100%")
 
@@ -70,7 +70,7 @@ $(document).ready(function(){
 
 	});
 
-
+	
 });
 
 //var menu = $("#nav-main")[0];
@@ -92,8 +92,9 @@ $(".telefono").css("width", "1000px");*/
 	//console.log("ancho: "+$(window).width()  767px)
     /*if (window.pageYOffset >= menuPosition  && $(window).width()>= 767) {
         //menu.style.position = 'fixed';
+        
 
-
+        
         //main.css("margin-left", "235px");
         //main.css("width", "100%");
         //main.css("background", "red");
