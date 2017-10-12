@@ -374,6 +374,14 @@ header > .pull-md-right{
 .panel-pdf{
 }
 
+.lost_password{
+  display: flex;
+  flex-direction: column;
+}
+.lost_password .buttons{
+ display: flex; 
+}
+
 @media (min-width: 1301px) {
   .pkp_structure_main {
     padding: 0 10px;
