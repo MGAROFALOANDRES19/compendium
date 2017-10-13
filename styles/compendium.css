@@ -198,7 +198,7 @@ a{
   text-align: center;
 }
 
-li:hover, li > a:hover {
+#nav-main-menu li:hover, #navigationUser  > li > a:hover {
   background-color: var(--color-light) !important;
 }
 
@@ -470,4 +470,8 @@ legend{margin-bottom: 0px;}
 
 .identity{
   margin-bottom: 20px;
+}
+
+.optin{
+  margin: auto;
 }
