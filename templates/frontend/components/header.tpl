@@ -141,18 +141,19 @@
               <li><a class="login" href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{translate key="navigation.login"}</a></li>
 							{if !$hideRegisterLink}
 								<li><a class="register"href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>
+                <div class="row center">
+
+        					<a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="lostPassword"}">
+        											¿Haz olvidado tu contraseña?{*translate key="user.logOut"*}
+        										</a>
+        					<!--<a href="#" class="password-recovery">¿Haz olvidado tu contraseña?</a>-->
+
+        				</div>
 							{/if}
 						{/if}
 					</ul>
 				</div><!-- .row -->
-				<div class="row">
 
-					<a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="lostPassword"}">
-											¿Haz olvidado tu contraseña?{*translate key="user.logOut"*}
-										</a>
-					<!--<a href="#" class="password-recovery">¿Haz olvidado tu contraseña?</a>-->
-
-				</div>
 			</div><!-- .container-fluid -->
       {if !$noContextsConfigured}
         <div class="pull-md-right">

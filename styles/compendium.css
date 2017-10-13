@@ -422,7 +422,7 @@ header > .pull-md-right{
 .dropdown-menu{
   padding: 0;
 }
-.dropdown-menu a{ color: white !important; }
+#nav-main-menu .dropdown-menu > li > a{ color: white !important; }
 
 @media (min-width: 1301px) {
   .pkp_structure_main {
@@ -474,4 +474,16 @@ legend{margin-bottom: 0px;}
 
 .optin{
   margin: auto;
+}
+ #navigationUser .dropdown-menu{
+  top: 100%;
+  left: auto;
+ }
+
+ #navigationUser a{
+   color: var(--color);
+ }
+
+.center{
+  text-align: center;
 }

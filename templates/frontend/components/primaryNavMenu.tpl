@@ -38,28 +38,6 @@
       </div>
     {/if}
   </nav>
-  {if $enableAnnouncements}
-  <li>
-    <a href="{url router=$smarty.const.ROUTE_PAGE page="announcement"}">
-      {translate key="announcement.announcements"}
-    </a>
-  </li>
-  {/if}
-
-  {if $currentJournal}
-
-  {if $currentJournal->getSetting('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
-  <li>
-    <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="current"}">
-      {translate key="navigation.current"}
-    </a>
-  </li>
-  <li>
-    <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
-      {translate key="navigation.archives"}
-    </a>
-  </li>
-  {/if}
   <li class="dropdown">
     <a href="{url router=$smarty.const.ROUTE_PAGE page="about"}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{translate key="navigation.about"} <span class="glyphicon glyphicon-triangle-right"></span></a>
     <ul class="dropdown-menu">
@@ -78,11 +56,11 @@
           {translate key="about.submissions"}
         </a>
       </li>
-	  {if $currentJournal->getSetting('mailingAddress') || $currentJournal->getSetting('contactName')}
+    {if $currentJournal->getSetting('mailingAddress') || $currentJournal->getSetting('contactName')}
     <li id="item-desplegable">
-      
+
       <a href="#">Otro <span class="glyphicon glyphicon-triangle-right"></span></a>
-     
+
 
     </li>
      <ul id="menu-desplegable">
@@ -100,14 +78,37 @@
 
       </ul>
 
-	  {*<li>
-	    <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="contact"}">
-		    {translate key="about.contact"}
-	    </a>
-	  </li>*}
+    {*<li>
+      <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="contact"}">
+        {translate key="about.contact"}
+      </a>
+    </li>*}
       {/if}
     </ul>
 
+  {if $currentJournal}
+
+  {if $currentJournal->getSetting('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
+  <li>
+    <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="current"}">
+      {translate key="navigation.current"}
+    </a>
+  </li>
+  <li>
+    <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
+      {translate key="navigation.archives"}
+    </a>
+  </li>
+  {/if}
+
+    {/if}
+
+    {if $enableAnnouncements}
+    <li>
+      <a href="{url router=$smarty.const.ROUTE_PAGE page="announcement"}">
+        {translate key="announcement.announcements"}
+      </a>
+    </li>
     {/if}
   </ul>
 </div><!-- /.navbar-collapse -->
