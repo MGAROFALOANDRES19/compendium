@@ -43,7 +43,7 @@
     		<div class="col-md-4" role="complementary" aria-label="{translate|escape key="about.aboutThisPublishingSystem"}">
     			<a href="{url page="about" op="aboutThisPublishingSystem"}">
     				<!--<img alt="{translate key=$packageKey}" src="{$baseUrl}/{$brandImage}">-->
-            <img src="{$baseUrl}/plugins/themes/compendium/images/logo-espol_0_0.png" class="img-logo">
+            <img src="{$baseUrl}/plugins/themes/compendium/images/recurso_1.png" class="img-logo">
     			</a>
     			<!--<a href="{$pkpLink}">
     				<img alt="{translate key="common.publicKnowledgeProject"}" src="{$baseUrl}/lib/pkp/templates/images/pkp_brand.png">
