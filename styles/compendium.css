@@ -433,3 +433,41 @@ header > .pull-md-right{
   }
 
 }
+.pkp_form{
+  padding: 15px  35px !important;
+  text-align: center;
+}
+
+.my-form-group{
+  margin: auto;
+  margin-top: 15px;
+  width: 80%;
+}
+
+.my-form-group > input{
+  float: none;
+}
+
+label{
+  margin-left: 0
+}
+
+.buttons{
+  width: 90%;
+
+margin-left: 10%;
+margin-top: 10px;
+}
+
+.my-form-group > a{
+  color: white;
+}
+
+legend{margin-bottom: 0px;}
+.login legend{
+  color: white;
+}
+
+.identity{
+  margin-bottom: 20px;
+}

@@ -90,7 +90,9 @@
 		width: 85%;
 	}
 
-
+	.my-form-group{
+		float: none;
+	}
 }
 @media (min-width: 767px){
 	.footer{

@@ -14,12 +14,29 @@
  * @uses $hasAccess bool Can this user access galleys for this context?
  * @uses $showGalleyLinks bool Show galley links to users without access?
  *}
-<div class="issue-toc compendium-numero-actual">
+
+ <div class="issue-toc compendium-numero-actual">
 
 	{* Indicate if this is only a preview *}
 	{if !$issue->getPublished()}
 		{include file="frontend/components/notification.tpl" type="warning" messageKey="editor.issues.preview"}
 	{/if}
+
+  {if $issueGalleys && $hasAccess}
+ <div class="complete_number">
+    <h2>
+      {translate key="issue.fullIssue"}
+    </h2>
+    <ul class="galleys_links">
+      {foreach from=$issueGalleys item=galley}
+        <li>
+          {include file="frontend/objects/galley_link.tpl" parent=$issue}
+        </li>
+      {/foreach}
+    </ul>
+ </div>
+ {/if}
+
 
 	{* Issue introduction area above articles *}
 	<div class="heading row info-actual">
@@ -81,20 +98,7 @@
 	</div>
 
 	{* Full-issue galleys *}
-	{if $issueGalleys && ($hasAccess || $showGalleyLinks)}
-		<div class="galleys">
-			<div class="page-header">
-				<h2>
-					<small>{translate key="issue.fullIssue"}</small>
-				</h2>
-			</div>
-			<div class="btn-group" role="group">
-				{foreach from=$issueGalleys item=galley}
-					{include file="frontend/objects/galley_link.tpl" parent=$issue}
-				{/foreach}
-			</div>
-		</div>
-	{/if}
+
 
 	{* Articles *}
 	<div class="sections compendium-publicaciones">

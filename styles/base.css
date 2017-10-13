@@ -97,7 +97,7 @@ input#button2 { background:#FFFFFF; padding: 14px; border: 1px #007bc4 solid;fon
 border-radius: 5px;}
 input#button2:hover {background: #007bc4; color:#fff;}
 
-input[type="text"] { background:#FFFFFF; padding: 14px; border: 1px #007bc4 solid;font-size:16px; color:#007bc4; text-transform: uppercase;
+input[type="text"] { background:#FFFFFF; padding: 14px; border: 1px #007bc4 solid;font-size:16px; color:#007bc4;
 -webkit-border-radius: 5px;
 	border-radius: 5px;}
 
@@ -139,7 +139,7 @@ input[type="checkbox"] + label span {
 
 input[type="checkbox"]:checked + label span{
      background-color:#007bc4;
-	
+
 }
 
 input[type="checkbox"] + label {color:#007bc4; font-family:MyriadPro; font-size: 18px;}
@@ -164,8 +164,8 @@ ul {list-style: none; margin: 0; padding: 0;}
 #arrowr {
 	position: relative;
 	display:block;
-     width: 0; 
-     height: 0; 
+     width: 0;
+     height: 0;
      border-left: 35px solid #007bc4;
      border-top: 35px solid transparent;
      border-bottom: 35px solid transparent;
@@ -181,8 +181,8 @@ transition: all 300ms ease-in-out;
 #arrowl {
 	position: relative;
 	display:block;
-     width: 0; 
-     height: 0; 
+     width: 0;
+     height: 0;
      border-right: 35px solid #007bc4;
      border-top: 35px solid transparent;
 	border-bottom: 35px solid transparent; 	-webkit-transition: all 300ms ease-in-out;
