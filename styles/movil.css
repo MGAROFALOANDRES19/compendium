@@ -62,10 +62,7 @@
 
 	.pull-md-right > .navbar-form{
 		padding: 0;
-	}
-	.pull-md-right{
-		margin-top: 20px;
-	}
+}
 
 	.icon-search{
 		display: block;
@@ -74,6 +71,25 @@
 	.form-group{
 		float: left;
 	}
+
+	#nav-main-menu{
+		background: none;
+		height: auto;
+		width: 100%;
+	}
+
+	.right, .pull-md-right{
+		margin-top: 5%;
+	}
+	.navbar-collapse{
+		margin-top: 5%;
+	}
+
+
+	.navbar-brand-logo{
+		width: 85%;
+	}
+
 
 }
 @media (min-width: 767px){
@@ -90,8 +106,9 @@
 }
 @media (min-width: 540px){
 	.current_issue{
-	  
+
 	}
+
 }
 @media (max-width: 539px){
 	.footer{
@@ -118,7 +135,25 @@
 		margin-left: 0;
 	}
 
+	.icon-bar{
+		width: 100% !important;
+    height: 2px !important;
+	}
+
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px !important;
+	}
+	.navbar-brand {
+    padding: 0px 0px;
 }
+
+	.right, .pull-md-right{
+		clear: both!important;
+		margin-top: 5px;
+	}
+}
+
+
 @media (max-width: 830px){
 	.compendium-numero-actual{
 		display: flex;

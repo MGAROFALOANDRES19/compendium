@@ -351,8 +351,8 @@ li:hover, li > a:hover {
   display: none;
 }
 
-.navbar-toggle{
-  margin-top: 38px;
+.navbar-brand{
+  padding: 0px 15px;
 }
 
 header > .pull-md-right{
@@ -379,7 +379,25 @@ header > .pull-md-right{
   flex-direction: column;
 }
 .lost_password .buttons{
- display: flex; 
+ display: flex;
+}
+
+
+	.navbar-toggle{
+		margin-right: 0;
+		background: transparent;
+		border: none;
+		width: 15%;
+	}
+
+	.icon-bar{
+		width: 100% !important;
+    height: 5px !important;
+    background-color: var(--color) !important;
+	}
+
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 8px !important;
 }
 
 @media (min-width: 1301px) {
