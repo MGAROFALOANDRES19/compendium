@@ -279,7 +279,7 @@ li:hover, li > a:hover {
 
 .page_announcements, .page_issue, .page_issue_archive, .page_about, .page_editorial_team,
 .page_submissions, .page_contact, .page_register, .page_login, .page_lost_password, .page_search,
-.page_announcement, .page_article{
+.page_announcement, .page_article, .page_about_publishing_system{
   width: 100%;
   margin: 0 auto;
   padding: 20px;
@@ -322,7 +322,10 @@ li:hover, li > a:hover {
 .glyphicon-triangle-right{
   right: 10px;
 }
-
+.mynavbar .glyphicon-triangle-right:before{
+  color:white;
+  font-size: initial;
+}
 .glyphicon-triangle-right:before, .glyphicon-triangle-left:before{
   color:#007bc4;
   font-size: 2em;
@@ -381,6 +384,27 @@ header > .pull-md-right{
 .lost_password .buttons{
  display: flex; 
 }
+
+#item-desplegable{
+  position: relative;
+}
+#item-desplegable:hover + #menu-desplegable{
+  display: block;
+}
+#menu-desplegable:hover {
+  display: block;
+}
+#menu-desplegable{
+  display: none;
+  position: absolute;
+  margin: 2px 0 0;
+  left: 100%;
+  top: calc(100% - 30px);
+}
+.dropdown-menu{
+  padding: 0;
+}
+.dropdown-menu a{ color: white !important; }
 
 @media (min-width: 1301px) {
   .pkp_structure_main {

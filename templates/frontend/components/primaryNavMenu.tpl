@@ -61,7 +61,7 @@
   </li>
   {/if}
   <li class="dropdown">
-    <a href="{url router=$smarty.const.ROUTE_PAGE page="about"}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{translate key="navigation.about"} <span class="caret"></span></a>
+    <a href="{url router=$smarty.const.ROUTE_PAGE page="about"}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{translate key="navigation.about"} <span class="glyphicon glyphicon-triangle-right"></span></a>
     <ul class="dropdown-menu">
       <li>
         <a href="{url router=$smarty.const.ROUTE_PAGE page="about"}">
@@ -79,11 +79,32 @@
         </a>
       </li>
 	  {if $currentJournal->getSetting('mailingAddress') || $currentJournal->getSetting('contactName')}
-	  <li>
+    <li id="item-desplegable">
+      
+      <a href="#">Otro <span class="glyphicon glyphicon-triangle-right"></span></a>
+     
+
+    </li>
+     <ul id="menu-desplegable">
+        <li>
+          <a href="#">Patrocinadores de la revista</a>
+        </li>
+        <li>
+          <a href="#">Mapa del sitio</a>
+        </li>
+        <li>
+          <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="aboutThisPublishingSystem"}">
+          Acerca del sistema de publicacion
+        </a>
+        </li>
+
+      </ul>
+
+	  {*<li>
 	    <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="contact"}">
 		    {translate key="about.contact"}
 	    </a>
-	  </li>
+	  </li>*}
       {/if}
     </ul>
 
