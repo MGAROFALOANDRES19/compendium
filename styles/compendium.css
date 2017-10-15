@@ -80,6 +80,7 @@ text-align: justify;
   color: white !important;
   height: 100vh;
   width: 235px;
+  z-index: 1000
 }
 .navbar-brand-logo img{
   max-height: none;
@@ -468,7 +469,7 @@ label{
   margin-left: 0
 }
 
-.buttons{
+.login > .buttons{
   width: 90%;
 
 margin-left: 10%;
@@ -496,8 +497,11 @@ legend{margin-bottom: 0px;}
   left: auto;
  }
 
- #navigationUser a{
-   color: var(--color);
+ #navigationUser .forgetPass{
+   font-size: 14px;
+    line-height: 16px;
+    color: #a3a1a1;
+    text-align: left;
  }
 
 .center{
@@ -515,4 +519,71 @@ h1{
     color: #535e6b;
     text-align: left;
     text-transform: uppercase;
+}
+
+h2{
+  font-family: 'MyriadPro';;
+    font-size: 24px;
+    line-height: 26px;
+    color: #007bc4;
+    text-align: left;
+}
+
+h3{
+  font-family: 'MyriadProR';
+  font-size: 22px;
+    line-height: 24px;
+    color: #a3a1a1;
+    text-align: left;
+}
+
+h4{
+  font-family: 'MyriadProR';
+    font-size: 20px;
+    line-height: 22px;
+    color: #a3a1a1;
+    text-align: left;
+}
+
+h5{
+  font-family: 'MyriadProR';
+    font-size: 14px;
+    line-height: 16px;
+    color: #00a4e0;
+    text-align: left;
+}
+
+select{
+  background: #FFFFFF;
+    height: 48px;
+    border: 1px #007bc4 solid;
+    font-size: 16px;
+    color: #007bc4;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.input-group-btn > .btn-default{
+  margin-left: 0;
+    margin-top: -1px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border-radius: 0px 5px 5px 0px
+}
+
+.buttons > .btn-default{
+  border-radius: 5px;
+}
+
+.reviewer{
+  margin-top: 25px;
+}
+
+.article-references-content{
+  font-family: MyriadPro;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a3a1a1;
+    text-align: left;
 }

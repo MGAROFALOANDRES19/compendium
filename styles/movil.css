@@ -93,6 +93,10 @@
 	.my-form-group{
 		float: none;
 	}
+	
+	.search-advanced{
+			clear: both;
+		}
 
 	#menu-desplegable{
 	position: static;

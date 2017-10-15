@@ -143,7 +143,7 @@
 								<li><a class="register"href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>
                 <div class="row center">
 
-        					<a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="lostPassword"}">
+        					<a class="forgetPass" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="lostPassword"}">
         											¿Haz olvidado tu contraseña?{*translate key="user.logOut"*}
         										</a>
         					<!--<a href="#" class="password-recovery">¿Haz olvidado tu contraseña?</a>-->
