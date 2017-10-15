@@ -63,7 +63,7 @@
 
 
     </li>
-     <ul id="menu-desplegable">
+     <ul id="menu-desplegable" class="dropdown-menu">
         <li>
           <a href="#">Patrocinadores de la revista</a>
         </li>

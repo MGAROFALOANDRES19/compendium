@@ -20,6 +20,13 @@
         --gray: #535e6b;
 }
 
+body{
+  font-family: 'MyriadProR';
+font-size: 16px;
+line-height: 21px;
+color: #535e6b;
+text-align: justify;
+}
 
 .left{
   float: left;
@@ -51,8 +58,8 @@
   text-transform: uppercase;
 }
 
-#main-navigation > li > a:focus{
-  color: var(--color) !important;
+.navbar-default .navbar-nav > .open > a:focus{
+  background: var(--color-light) !important;
 }
 
 .dropdown-menu a{ text-transform: uppercase; }
@@ -93,6 +100,11 @@
 
 .btn-default, .form-control{
   float: left;
+}
+
+.btn-default:hover{
+  background: #00a4e0;
+    color: white;
 }
 
 .btn-default{
@@ -198,8 +210,12 @@ a{
   text-align: center;
 }
 
-#nav-main-menu li:hover, #navigationUser  > li > a:hover {
+#nav-main-menu li:hover, #navigationUser  > li > .login:hover {
   background-color: var(--color-light) !important;
+}
+
+#nav-main-menu .dropdown-menu > li > a:hover{
+  background-color: var(--color-light)
 }
 
 .footer p{
@@ -486,4 +502,17 @@ legend{margin-bottom: 0px;}
 
 .center{
   text-align: center;
+}
+
+.register:hover{
+  background: none !important;
+}
+
+h1{
+  font-family: 'arvo';
+  font-size: 24px;
+    line-height: 26px;
+    color: #535e6b;
+    text-align: left;
+    text-transform: uppercase;
 }
