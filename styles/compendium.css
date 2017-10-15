@@ -587,3 +587,10 @@ select{
     color: #a3a1a1;
     text-align: left;
 }
+
+footer{
+  margin: 0;
+    position: absolute;
+    z-index: 1000 !important;
+    width: 100% !important;
+}
