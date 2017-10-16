@@ -51,7 +51,7 @@
 				</div>
 			{/if}
 
-			
+
 
 			<div class="list-group">
 
@@ -157,20 +157,19 @@
 
 <div class="panel-body">
 
-					<div class="dropdown">
-						
-						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Exportar
-							<span class="caret"></span></button>
-    <ul class="dropdown-menu dropdown-menu-citation">
-							
+					<div class="">
+
+
+            <ul class="skills">
+
 
 							{* Output list of all citation formats *}
-							
+
 								{foreach from=$citationPlugins name="citationPlugins" item="citationPlugin"}
 									{capture assign="citationUrl"}{url page="article" op="cite" path=$article->getBestArticleId()}/{$citationPlugin->getName()|escape}{/capture}
 									<li><a class="list-group-item {$citationPlugin->getName()|escape}" href="{$citationUrl}"{if !$citationPlugin->isDownloadable()} data-load-citation="true"{/if} target="_blank">{$citationPlugin->getCitationFormatName()|escape}</a></li>
 								{/foreach}
-							</ul>
+              </ul>
 						</div>
 
 

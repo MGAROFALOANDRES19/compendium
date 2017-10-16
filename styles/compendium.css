@@ -594,3 +594,16 @@ footer{
     z-index: 1000 !important;
     width: 100% !important;
 }
+
+.article-sidebar{
+  float: right;
+}
+
+.skills{
+  -moz-column-count: 2;
+    -moz-column-gap: 2.5em;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 2.5em;
+     column-count: 2;
+     column-gap: 2.5em;
+}
