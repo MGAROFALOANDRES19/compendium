@@ -57,9 +57,9 @@
         </a>
       </li>
     {if $currentJournal->getSetting('mailingAddress') || $currentJournal->getSetting('contactName')}
-    <li id="item-desplegable">
+    <li class="dropdown" id="item-desplegable">
 
-      <a href="#">Otro <span class="glyphicon glyphicon-triangle-right"></span></a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Otro <span class="glyphicon glyphicon-triangle-right"></span></a>
 
 
     </li>

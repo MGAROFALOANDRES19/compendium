@@ -404,6 +404,7 @@ header > .pull-md-right{
 
 
 	.navbar-toggle{
+    margin-top: 0;
 		margin-right: 0;
 		background: transparent;
 		border: none;
