@@ -43,23 +43,23 @@
     <ul class="dropdown-menu">
       <li>
         <a href="{url router=$smarty.const.ROUTE_PAGE page="about"}">
-          {translate key="about.aboutContext"}
+          {*translate key="about.aboutContext"*}Revista
         </a>
       </li>
       <li>
         <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialTeam"}">
-          {translate key="about.editorialTeam"}
+          {*translate key="about.editorialTeam"*}Contactos
         </a>
       </li>
       <li>
         <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">
-          {translate key="about.submissions"}
+          {*translate key="about.submissions"*}Directrices
         </a>
       </li>
     {if $currentJournal->getSetting('mailingAddress') || $currentJournal->getSetting('contactName')}
     <li class="dropdown" id="item-desplegable">
 
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Otro <span class="glyphicon glyphicon-triangle-right"></span></a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Otros <span class="glyphicon glyphicon-triangle-right"></span></a>
 
 
     </li>
@@ -91,12 +91,12 @@
   {if $currentJournal->getSetting('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
   <li>
     <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="current"}">
-      {translate key="navigation.current"}
+      {*translate key="navigation.current"*}Seguimiento de envíos
     </a>
   </li>
   <li>
     <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
-      {translate key="navigation.archives"}
+      {*translate key="navigation.archives"*}Volúmenes
     </a>
   </li>
   {/if}

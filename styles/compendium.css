@@ -195,6 +195,9 @@ margin: 1em;
 .glyphicon-chevron-right:before,.glyphicon-chevron-left:before{
 color:#007bc4;
 }
+fieldset .fields{
+  text-align: left;
+}
 
 .footer{
   /*position: fixed;
@@ -283,8 +286,8 @@ a{
 }
 .compendium-numero-actual .info-actual{
       width: auto;
-    -ms-align-self: center;
-    align-self: center;
+    -ms-align-self: start;
+    align-self: start;
 }
 .cover img {
   max-width: none !important;

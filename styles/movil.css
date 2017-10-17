@@ -178,4 +178,9 @@
 		display: flex;
 		flex-direction: column;
 	}
+	.compendium-numero-actual .info-actual{
+      width: auto;
+    -ms-align-self: center;
+    align-self: center;
+}
 }
