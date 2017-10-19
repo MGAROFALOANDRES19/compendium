@@ -109,7 +109,26 @@
 	}
 
 }
+@media (max-width: 930px){
 
+	.login_elementos{
+		flex-direction: column;
+	}
+	.login_elementos .registro, .login_elementos .login{
+		width: 100%;
+	}
+	.login_elementos .registro{
+		min-height: auto;
+		height: auto;
+	}
+	.login_elementos .login{
+		height: auto;
+	}
+	#register{
+		margin:0;
+		padding: 0 !important;
+	}
+}
 
 @media (min-width: 767px){
 	.footer{
@@ -179,8 +198,8 @@
 		flex-direction: column;
 	}
 	.compendium-numero-actual .info-actual{
-      width: auto;
-    -ms-align-self: center;
-    align-self: center;
-}
+      	width: auto;
+	    -ms-align-self: center;
+		align-self: center;
+	}
 }
