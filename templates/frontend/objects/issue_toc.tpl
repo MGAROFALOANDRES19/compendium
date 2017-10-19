@@ -15,19 +15,18 @@
  * @uses $showGalleyLinks bool Show galley links to users without access?
  *}
 
- <div class="issue-toc compendium-numero-actual">
 
-	{* Indicate if this is only a preview *}
+{* Indicate if this is only a preview *}
 	{if !$issue->getPublished()}
 		{include file="frontend/components/notification.tpl" type="warning" messageKey="editor.issues.preview"}
 	{/if}
 
   {if $issueGalleys && $hasAccess}
- <div class="complete_number">
+ <div class="complete_number numero_completo">
     <h2>
-      {translate key="issue.fullIssue"}
+      {translate key="issue.fullIssue"} : 
     </h2>
-    <ul class="galleys_links">
+    <ul class="galleys_links pdf_numero">
       {foreach from=$issueGalleys item=galley}
         <li>
           {include file="frontend/objects/galley_link.tpl" parent=$issue}
@@ -38,22 +37,7 @@
  {/if}
 
 
-	{* Issue introduction area above articles *}
-	<div class="heading row info-actual">
-		{assign var="issueDetailsCol" value="12"}
-
-		{* Issue cover image and description*}
-		{assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
-		{if $issueCover}
-			{assign var="issueDetailsCol" value="8"}
-			<div class="thumbnail col-md-4">
-				<a class="cover" href="{url op="view" page="issue" path=$issue->getBestIssueId()}">
-					<img class="" src="{$issueCover|escape}"{if $issue->getLocalizedCoverImageAltText() != ''} alt="{$issue->getLocalizedCoverImageAltText()|escape}"{/if}>
-				</a>
-			</div>
-		{/if}
-
-		<div class="issue-details col-md-{$issueDetailsCol}">
+ <div class="issue-details col-md-{$issueDetailsCol}">
 
 			{if $issue->hasDescription()}
 				<div class="description">
@@ -95,6 +79,28 @@
 				</p>-->
 			{/if}
 		</div>
+
+ <div class="issue-toc compendium-numero-actual">
+
+	
+
+
+	{* Issue introduction area above articles *}
+	<div class="heading row info-actual">
+		{assign var="issueDetailsCol" value="12"}
+
+		{* Issue cover image and description*}
+		{assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
+		{if $issueCover}
+			{assign var="issueDetailsCol" value="8"}
+			<div class=" col-md-4">
+				<a class="cover" href="{url op="view" page="issue" path=$issue->getBestIssueId()}">
+					<img class="" src="{$issueCover|escape}"{if $issue->getLocalizedCoverImageAltText() != ''} alt="{$issue->getLocalizedCoverImageAltText()|escape}"{/if}>
+				</a>
+			</div>
+		{/if}
+
+
 	</div>
 
 	{* Full-issue galleys *}

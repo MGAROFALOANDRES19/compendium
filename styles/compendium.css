@@ -235,7 +235,7 @@ a{
 }
 
 .telefono{
-  margin-top: 2em;
+  margin-top: 1em;
   line-height: 1em;
 
 }
@@ -272,6 +272,16 @@ a{
   border: none;
 }
 
+.numero_completo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.pdf_numero {
+  margin-left: 1em;
+}
+
 .compendium-numero-actual{
     display: -webkit-flex;
     display: -moz-flex;
@@ -293,9 +303,10 @@ a{
 .cover img {
   max-width: none !important;
     width: 200px;
+    height: 240px;
 }
 .compendium-publicaciones{
-  margin-left: 23px;
+  margin-left: 40px;
 }
 
 .page_announcements, .page_issue, .page_issue_archive, .page_about, .page_editorial_team,
