@@ -17,9 +17,9 @@
  * @uses $username string Username input entry if available
  *}
 <fieldset class="identity">
-	<legend>
-		{translate key="user.profile"}
-	</legend>
+	<!--<legend>-->
+		{*translate key="user.profile"*}
+	<!--</legend>-->
 	<div class="fields">
 		<div class="form-group my-form-group first_name">
 			<label>
@@ -57,12 +57,12 @@
 	</div>
 </fieldset>
 
-<fieldset class="login">
+<fieldset class="">
 
 	<div class="fields">
-    <legend>
-  		{translate key="user.login"}
-  	</legend>
+    <!--<legend>-->
+  		{*translate key="user.login"*}
+  	<!--</legend>-->
 		<div class="form-group my-form-group email">
 			<label>
 				{translate key="user.email"}

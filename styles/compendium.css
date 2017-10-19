@@ -44,6 +44,9 @@ text-align: justify;
   color: white !important;
   padding: 10px 35px !important;
  }
+ #login {
+  background: white;
+ }
 .nav-pills{
 }
 .register{
@@ -116,8 +119,8 @@ text-align: justify;
   border-radius: 5px 0px 0px 5px;
 }
 .form-control{
-  border-radius: 5px 0px 0px 5px;
-  border: 2px var(--color) solid !important;
+  /*border-radius: 5px 0px 0px 5px;
+  border: 2px var(--color) solid !important;*/
   width: 100% !important;
   margin-top: -1px;
 }
@@ -125,7 +128,8 @@ text-align: justify;
 .form-group{
   width: 65%;
 }
-
+#reviewerOptinGroup{ 
+width: 100%; }
 .btn-default{
   /*width: min-content;
   background: var(--color);
@@ -316,6 +320,29 @@ a{
   width: 100%;
   margin: 0 auto;
   padding: 20px;
+}
+
+.login_elementos{
+  display: flex;
+  width: 100%;
+}
+.login_elementos .registro, .login_elementos .login{
+  min-height: 300px;
+  height: 450px;
+  border: 1px solid #ddd;
+  width: 50%;
+}
+.login_elementos .registro{
+  padding: 15px 35px;
+  justify-content: center;
+      display: flex;
+    flex-direction: column;
+}
+#register {
+      border: 1px solid #ddd;
+    padding: 10px;
+    margin: 0 100px;
+}
 }
 .issues-compendium .media-left{
       display: initial;
@@ -593,8 +620,14 @@ select{
   border-radius: 5px;
 }
 
-.reviewer{
+.reviewer, #register .buttons{
   margin-top: 25px;
+  text-align: left;
+  padding: 0 80px;
+}
+#register .buttons .btn-default{
+  display: none;
+
 }
 
 .article-references-content{
@@ -623,4 +656,22 @@ footer{
     -webkit-column-gap: 2.5em;
      column-count: 2;
      column-gap: 2.5em;
+}
+
+.block_language {
+  display: flex;
+  border: none;
+}
+.block_language .title {
+  display: none;
+}
+.block_language .content ul{
+  display: flex;
+}
+.block_language li{
+  border: none;
+  border-width:0;
+}
+.btn_send {
+  width: 220px;
 }

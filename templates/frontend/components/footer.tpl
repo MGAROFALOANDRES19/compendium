@@ -15,14 +15,17 @@
 	</main>
 
 	{* Sidebars *}
-	{if empty($isFullWidth)}
-		{call_hook|assign:"sidebarCode" name="Templates::Common::Sidebar"}
-		{if $sidebarCode}
+	{*if empty($isFullWidth)*}
+		{*call_hook|assign:"sidebarCode" name="Templates::Common::Sidebar"*}
+		{*if $sidebarCode*}
+    <!--
 			<aside id="sidebar" class="pkp_structure_sidebar left col-xs-12 col-sm-2 col-md-4" role="complementary" aria-label="{translate|escape key="common.navigation.sidebar"}">
-				{$sidebarCode}
-			</aside><!-- pkp_sidebar.left -->
-		{/if}
-	{/if}
+-->
+				{*$sidebarCode*}
+
+			<!--</aside>--><!-- pkp_sidebar.left -->
+		{*/if*}
+	{*/if*}
   </div><!-- pkp_structure_content -->
   <footer class="footer" role="contentinfo">
 
