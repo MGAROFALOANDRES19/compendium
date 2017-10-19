@@ -71,6 +71,7 @@ text-align: justify;
 .fixed-item{
   position: fixed;
   top:0;
+  min-width: 300px;
   width: 49.5%;
 }
 
