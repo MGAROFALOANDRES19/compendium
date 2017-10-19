@@ -128,7 +128,7 @@ text-align: justify;
 .form-group{
   width: 65%;
 }
-#reviewerOptinGroup{ 
+#reviewerOptinGroup{
 width: 100%; }
 .btn-default{
   /*width: min-content;
@@ -674,4 +674,21 @@ footer{
 }
 .btn_send {
   width: 220px;
+}
+.panel-pdf{
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.panel-body .dropdown-menu{
+  left: 0;
+  top: 100%;
+}
+
+.panel-body button{
+  margin: 0.4em 1.5em;
+padding-top: 5px;
+padding-bottom: 5px;
+background: transparent;
+color: var(--color)
 }

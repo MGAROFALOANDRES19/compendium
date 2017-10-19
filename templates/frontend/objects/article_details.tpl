@@ -148,39 +148,33 @@
   </div>
 -->
 				{if $citationPlugins|@count}
-				<div id="panel-pdf" class="panel panel-default panel-pdf">
-							<div class="panel-heading">
-								PDF / Exportar
-							</div>
 
 
 
-<div class="panel-body">
 
-					<div class="">
+<div id="panel-pdf" class="panel-body panel-default panel-pdf">
+					<div class="navbar-collapse">
+            {* Article Galleys *}
+            			{if $article->getGalleys()}
+            				<div class="download">
+            					{foreach from=$article->getGalleys() item=galley}
+            						{include file="frontend/objects/galley_link.tpl" parent=$article}
+            					{/foreach}
+            				</div>
+            			{/if}
+                  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Exportar
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      {* Output list of all citation formats *}
 
-
-            <ul class="skills">
-
-
-							{* Output list of all citation formats *}
-
-								{foreach from=$citationPlugins name="citationPlugins" item="citationPlugin"}
-									{capture assign="citationUrl"}{url page="article" op="cite" path=$article->getBestArticleId()}/{$citationPlugin->getName()|escape}{/capture}
-									<li><a class="list-group-item {$citationPlugin->getName()|escape}" href="{$citationUrl}"{if !$citationPlugin->isDownloadable()} data-load-citation="true"{/if} target="_blank">{$citationPlugin->getCitationFormatName()|escape}</a></li>
-								{/foreach}
-              </ul>
-						</div>
-
-
-{* Article Galleys *}
-			{if $article->getGalleys()}
-				<div class="download">
-					{foreach from=$article->getGalleys() item=galley}
-						{include file="frontend/objects/galley_link.tpl" parent=$article}
-					{/foreach}
-				</div>
-			{/if}
+        {foreach from=$citationPlugins name="citationPlugins" item="citationPlugin"}
+          {capture assign="citationUrl"}{url page="article" op="cite" path=$article->getBestArticleId()}/{$citationPlugin->getName()|escape}{/capture}
+          <li><a class="list-group-item {$citationPlugin->getName()|escape}" href="{$citationUrl}"{if !$citationPlugin->isDownloadable()} data-load-citation="true"{/if} target="_blank">{$citationPlugin->getCitationFormatName()|escape}</a></li>
+        {/foreach}
+      </ul>
+    </li>
+  </div>
 
 					</div>
 				</div>

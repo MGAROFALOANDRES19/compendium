@@ -13,9 +13,9 @@ $(document).ready(function(){
 	if(menu[1]!=null)
 		var menuPosition = menu[1].getBoundingClientRect().top;
 
-	var panel = document.getElementById("panel-pdf")
+	/*var panel = document.getElementById("panel-pdf")
 	if(panel!=null)
-		var panelPosition = panel.getBoundingClientRect().top;
+		var panelPosition = panel.getBoundingClientRect().top;*/
 
 	var main = $(".mynavbar")
 
@@ -25,7 +25,7 @@ $(document).ready(function(){
 		//console.log("menu: "+menuPosition)
 		//console.log(menu)
 
-		if(panelPosition!=null){
+		/*if(panelPosition!=null){
 			console.log(window.pageYOffset)
 			if (window.pageYOffset >= panelPosition ) {
 				//console.log(panelPosition)
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 				$("#panel-pdf").removeClass("fixed-item")
 			}
-		}
+		}*/
 		if (window.pageYOffset >= menuPosition  && $(window).width()>= 767 && window.pageYOffset>=131) {
 			//console.log("Hola");
 			console.log("pageYOffset: "+window.pageYOffset);

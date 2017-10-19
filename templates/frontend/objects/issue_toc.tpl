@@ -24,7 +24,7 @@
   {if $issueGalleys && $hasAccess}
  <div class="complete_number numero_completo">
     <h2>
-      {translate key="issue.fullIssue"} : 
+      {translate key="issue.fullIssue"} :
     </h2>
     <ul class="galleys_links pdf_numero">
       {foreach from=$issueGalleys item=galley}
@@ -82,7 +82,7 @@
 
  <div class="issue-toc compendium-numero-actual">
 
-	
+
 
 
 	{* Issue introduction area above articles *}
