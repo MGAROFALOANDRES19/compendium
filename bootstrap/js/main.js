@@ -1,9 +1,6 @@
 //var menu = document.getElementById('main-navigation');
 
 $(document).ready(function(){
-
-
-
 	/*
 	var menu_ = $("#nav-main-menu");
 
@@ -30,7 +27,7 @@ $(document).ready(function(){
 
 		if(panelPosition!=null){
 			console.log(window.pageYOffset)
-			if (window.pageYOffset >= panelPosition  ) {
+			if (window.pageYOffset >= panelPosition ) {
 				//console.log(panelPosition)
 
 				$("#panel-pdf").addClass("fixed-item")
@@ -40,11 +37,9 @@ $(document).ready(function(){
 				$("#panel-pdf").removeClass("fixed-item")
 			}
 		}
-		if (window.pageYOffset >= menuPosition  && $(window).width()>= 767) {
+		if (window.pageYOffset >= menuPosition  && $(window).width()>= 767 && window.pageYOffset>=131) {
 			//console.log("Hola");
-
-
-
+			console.log("pageYOffset: "+window.pageYOffset);
 			content.css("margin-left", "235px");
 			//content.css("width", "100%")
 
