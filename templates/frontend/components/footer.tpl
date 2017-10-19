@@ -35,7 +35,7 @@
 
 
           <p class="telefono"> <span class="glyphicon glyphicon-earphone phone_" aria-hidden="true"></span> 
-            <span class="num-tel">(04) 2269061 / (04) 2269007</span></p>
+            <span class="num-tel">(04) 2269061 / (04) 2269039</span></p>
 
         </div>
     		{/if}
