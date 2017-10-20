@@ -94,7 +94,7 @@ text-align: justify;
 .navbar-default, .header_view{
   border:none;
   margin-top: 1.5em;
-  padding: 0 3em 1em;
+  padding: 0 3em;
 }
 .navbar-header .site-name{
   margin: auto;
@@ -674,6 +674,7 @@ footer{
 }
 .btn_send {
   width: 220px;
+  margin-top: 2em;
 }
 .panel-pdf{
   position: sticky;
@@ -691,4 +692,8 @@ padding-top: 5px;
 padding-bottom: 5px;
 background: transparent;
 color: var(--color)
+}
+.issn-compendium {
+      margin-top: 5em;
+    display: block;
 }

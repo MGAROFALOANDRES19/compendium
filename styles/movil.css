@@ -203,3 +203,33 @@
 		align-self: center;
 	}
 }
+
+@media (max-width: 767px) and (min-width: 540px){ 
+	.pull-md-right {
+		/margin-top: 0;
+	}
+	.navbar .right{
+		/margin-top: 0;
+	}
+	.navbar .container-fluid{
+		/width: 100%;
+	}
+	.navbar .pull-md-right {
+		margin-top: 4.2em;
+	}
+
+}
+@media (max-width: 539px) {
+	.container-fluid.right{
+		width: 100%;
+	}
+	.login.btn_send{
+		margin: 1em auto;
+	}
+	#navigationUser{
+		width: 100%;
+	}
+	.nav-pills > li{
+		float: none;
+	}
+}

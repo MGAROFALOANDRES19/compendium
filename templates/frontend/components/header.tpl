@@ -84,6 +84,8 @@
             </div>
           {/if}
 
+         	<span class="issn-compendium">ISSN: 1390-9894</span>
+
         </div>
         {include file="frontend/components/primaryNavMenu.tpl"}
         </div><!-- .pkp_head_wrapper -->
@@ -138,23 +140,23 @@
 								</ul>
 							</li>
 						{else}
-              <li><a class="login btn_send" href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{*translate key="navigation.login"*}Enviar paper</a></li>
+              <li><a class="login btn_send" href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{*translate key="navigation.login"*}Enviar artículo</a></li>
 							{if !$hideRegisterLink}
 								<!--<li><a class="register"href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>-->
-                <div class="row center">
+                <!--<div class="row center">-->
 
 
                 	{* Sidebars *}
-	{if empty($isFullWidth)}
-		{call_hook|assign:"sidebarCode" name="Templates::Common::Sidebar"}
-		{if $sidebarCode}
-			<aside id="sidebar" class="pkp_structure_sidebar col-xs-12 col-sm-12 col-md-12" role="complementary" aria-label="{translate|escape key="common.navigation.sidebar"}">
+	{*if empty($isFullWidth)*}
+		{*call_hook|assign:"sidebarCode" name="Templates::Common::Sidebar"*}
+		{*if $sidebarCode*}
+			<!--<aside id="sidebar" class="pkp_structure_sidebar col-xs-12 col-sm-12 col-md-12" role="complementary" aria-label="{translate|escape key="common.navigation.sidebar"}">-->
 
-				{$sidebarCode}
+				{*$sidebarCode*}
 
-			</aside><!-- pkp_sidebar.left -->
-		{/if}
-	{/if}
+			<!--</aside>--><!-- pkp_sidebar.left -->
+		{*/if*}
+	{*/if*}
 
         					<!--<a class="forgetPass" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="lostPassword"}">
 
@@ -165,7 +167,7 @@
         										</a>-->
         					<!--<a href="#" class="password-recovery">¿Haz olvidado tu contraseña?</a>-->
 
-        				</div>
+        				<!--</div>-->
 							{/if}
 						{/if}
 					</ul>

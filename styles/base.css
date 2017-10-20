@@ -100,9 +100,10 @@ input#button2:hover {background: #007bc4; color:#fff;}
 input[type="text"], input[type="password"] {
     background:#FFFFFF;
     padding: 14px;
-    border: none !important;font-size:16px;
+    border: none !important;
+    font-size:16px;
     color:#007bc4;
-        border-bottom: 2px solid #dcdcdc;
+        border-bottom: 2px solid #dcdcdc !important;
 
 
 }
