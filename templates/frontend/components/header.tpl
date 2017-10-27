@@ -173,8 +173,8 @@
 							{/if}
 						{/if}
             <div class="languages">
-              <button type="button" class="btn"><img src="{$baseUrl}/plugins/themes/compendium/images/spanish.png" alt="Español"></button>
-              <button type="button" class="btn"><img src="{$baseUrl}/plugins/themes/compendium/images/english.png" alt="English"></button>
+              <a href="{$baseUrl}/index.php/compendium/user/setLocale/es_ES"><img src="{$baseUrl}/plugins/themes/compendium/images/spanish.png" alt="Español"></a>
+              <a href="{$baseUrl}/index.php/compendium/user/setLocale/en_US"><img src="{$baseUrl}/plugins/themes/compendium/images/english.png" alt="English"></a>
             </div>
 
 					</ul>

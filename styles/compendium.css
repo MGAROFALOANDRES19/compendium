@@ -717,7 +717,7 @@ color: var(--color)
 
 }
 
-.languages > button{
+.languages > a{
   padding: 0;
   width: 30px;
   height: 30px;
@@ -725,6 +725,6 @@ color: var(--color)
   background-color: transparent;
   float: right;
 }
-.languages > button > img {
-
+.languages > a > img {
+  
 }
