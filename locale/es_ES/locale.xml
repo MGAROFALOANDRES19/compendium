@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/importexport/doaj/locale/es_ES/locale.xml
+  *
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Credits: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Spanish_(es_ES)
+  *
+  * Localization strings
+  -->
+
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.themes.compendium.name">Tema Compendium</message>
+  <message key="plugins.themes.compendium.description">Tema Compendium para los lectores.</message>
+
+  
+  <message key="plugins.themes.compendium.submit_paper">Enviar artículo</message>
+  <message key="plugins.themes.compendium.login">Iniciar sesión</message>
+  <message key="plugins.themes.compendium.registerNewAccount">Crear cuenta</message>
+
+</locale>

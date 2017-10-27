@@ -110,6 +110,12 @@
       </a>
     </li>
     {/if}
+
+    <li>
+      <a href="{url router=$smarty.const.ROUTE_PAGE page="indexaciones"}">
+        Indexaciones
+      </a>
+    </li>
   </ul>
 </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -46,6 +46,10 @@ text-align: justify;
  }
  #login {
   background: white;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
  }
 .nav-pills{
 }
@@ -313,22 +317,31 @@ a{
 .compendium-publicaciones{
   margin-left: 40px;
 }
-
-.page_announcements, .page_issue, .page_issue_archive, .page_about, .page_editorial_team,
-.page_submissions, .page_contact, .page_register, .page_login, .page_lost_password, .page_search,
-.page_announcement, .page_article, .page_about_publishing_system{
+#content-main_ > h2{
+  display: none;
+}
+.page{
   width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
-
+.indexaciones p{
+  text-align: center;
+}
+.indexaciones img{
+  margin: 2em 0;
+  opacity: 0.8;
+}
+.indexaciones img:hover{
+  opacity: 1;
+  cursor: pointer;
+}
 .login_elementos{
   display: flex;
   width: 100%;
 }
 .login_elementos .registro, .login_elementos .login{
   min-height: 300px;
-  height: 450px;
   border: 1px solid #ddd;
   width: 50%;
 }
@@ -337,6 +350,7 @@ a{
   justify-content: center;
       display: flex;
     flex-direction: column;
+        align-items: center;
 }
 #register {
       border: 1px solid #ddd;
@@ -514,9 +528,9 @@ label{
 }
 
 .login > .buttons{
-  width: 90%;
+  //width: 90%;
 
-margin-left: 10%;
+//margin-left: 10%;
 margin-top: 10px;
 }
 

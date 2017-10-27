@@ -63,7 +63,7 @@
 
 			<div class="buttons">
 				<button type="submit" class="btn btn-primary">
-					{translate key="user.login"}
+					{translate key="plugins.themes.compendium.login"}
 				</button>
 
 				{*if !$disableUserReg*}
@@ -79,7 +79,7 @@
 
 			{url|assign:registerUrl page="user" op="register" source=$source}
 
-			<a class="btn btn-default register-button" href="{$registerUrl}" role="button">{translate key="user.login.registerNewAccount"}</a>
+			<a class="btn btn-default register-button" href="{$registerUrl}" role="button">{translate key="plugins.themes.compendium.registerNewAccount"}</a>
 		</div>
 	</div>
 </div><!-- .page -->
