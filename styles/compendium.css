@@ -711,3 +711,20 @@ color: var(--color)
       margin-top: 5em;
     display: block;
 }
+
+.languages{
+  clear: both;
+
+}
+
+.languages > button{
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  background-color: transparent;
+  float: right;
+}
+.languages > button > img {
+
+}

@@ -172,8 +172,11 @@
         				<!--</div>-->
 							{/if}
 						{/if}
-            <button type="button" class="btn"><img src="/frontend/img/spanish.png" alt="Español"></button>
-            <button type="button" class="btn"><img src="/frontend/img/english.png" alt="English"></button>
+            <div class="languages">
+              <button type="button" class="btn"><img src="{$baseUrl}/plugins/themes/compendium/images/spanish.png" alt="Español"></button>
+              <button type="button" class="btn"><img src="{$baseUrl}/plugins/themes/compendium/images/english.png" alt="English"></button>
+            </div>
+
 					</ul>
 				</div><!-- .row -->
 
