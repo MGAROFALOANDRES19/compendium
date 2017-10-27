@@ -12,14 +12,11 @@
 <locale name="en_US" full_name="U.S. English">
 	<message key="plugins.themes.compendium.name">Compendium Theme</message>
 	<message key="plugins.themes.compendium.description">Compendium theme for the reader frontend.</message>
-	<message key="plugins.themes.compendium.accessible_menu.label">Quick jump to page content</message>
-	<message key="plugins.themes.compendium.accessible_menu.main_navigation">Main Navigation</message>
-	<message key="plugins.themes.compendium.accessible_menu.main_content">Main Content</message>
-	<message key="plugins.themes.compendium.accessible_menu.sidebar">Sidebar</message>
-	<message key="plugins.themes.compendium.article.sidebar">Article Sidebar</message>
-	<message key="plugins.themes.compendium.article.main">Main Article Content</message>
-	<message key="plugins.themes.compendium.article.details">Article Details</message>
-	<message key="plugins.themes.compendium.options.bootstrapTheme.label">Bootstrap Theme</message>
-	<message key="plugins.themes.compendium.options.bootstrapTheme.description">Select one of these open-source Bootstrap themes which change the colors aand typography of your website.</message>
+
+	<message key="plugins.themes.compendium.submit_paper">Submit paper</message>
+	<message key="plugins.themes.compendium.login">Login</message>
+	<message key="plugins.themes.compendium.registerNewAccount">Create account</message>
+
+	
 	
 </locale>

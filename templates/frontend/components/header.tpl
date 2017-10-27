@@ -140,7 +140,7 @@
 								</ul>
 							</li>
 						{else}
-              <li><a class="login btn_send" href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{*translate key="navigation.login"*}Enviar artículo</a></li>
+              <li><a class="login btn_send" href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{translate key="plugins.themes.compendium.submit_paper"}</a></li>
 							{if !$hideRegisterLink}
 								<!--<li><a class="register"href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>-->
                 <!--<div class="row center">-->
