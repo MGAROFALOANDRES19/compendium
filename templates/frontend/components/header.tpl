@@ -141,12 +141,14 @@
 							</li>
 						{else}
               <li><a class="login btn_send" href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{*translate key="navigation.login"*}Enviar artículo</a></li>
-							{if !$hideRegisterLink}
+
+              {if !$hideRegisterLink}
 								<!--<li><a class="register"href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>-->
                 <!--<div class="row center">-->
 
 
                 	{* Sidebars *}
+
 	{*if empty($isFullWidth)*}
 		{*call_hook|assign:"sidebarCode" name="Templates::Common::Sidebar"*}
 		{*if $sidebarCode*}
@@ -170,6 +172,8 @@
         				<!--</div>-->
 							{/if}
 						{/if}
+            <button type="button" class="btn"><img src="/frontend/img/spanish.png" alt="Español"></button>
+            <button type="button" class="btn"><img src="/frontend/img/english.png" alt="English"></button>
 					</ul>
 				</div><!-- .row -->
 
@@ -179,7 +183,6 @@
           {include file="frontend/components/searchForm_simple.tpl"}
         </div>
       {/if}
-
 		</header><!-- .pkp_structure_head -->
 		<div class="linea"></div>
     	{include file="frontend/components/primaryNavMenu.tpl"}
