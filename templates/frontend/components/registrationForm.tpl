@@ -16,6 +16,9 @@
  * @uses $email string Email input entry if available
  * @uses $username string Username input entry if available
  *}
+
+
+
 <fieldset class="identity">
 	<!--<legend>-->
 		{*translate key="user.profile"*}
@@ -23,26 +26,26 @@
 	<div class="fields">
 		<div class="form-group my-form-group first_name">
 			<label>
-				{translate key="user.firstName"}
-				<input class="form-control" type="text" name="firstName" id="firstName" value="{$firstName|escape}" maxlength="40" required>
+				
+				<input class="form-control" type="text" name="firstName" id="firstName" value="{$firstName|escape}" maxlength="40" required placeholder="{translate key="user.firstName"}">
 			</label>
 		</div>
 		<div class="form-group my-form-group middle_name">
 			<label>
-				{translate key="user.middleName"}
-				<input class="form-control" type="text" name="middleName" value="{$middleName|escape}" maxlength="40">
+				
+				<input class="form-control" type="text" name="middleName" value="{$middleName|escape}" maxlength="40" placeholder="{translate key="user.middleName"}">
 			</label>
 		</div>
 		<div class="form-group my-form-group last_name">
 			<label>
-				{translate key="user.lastName"}
-				<input class="form-control" type="text" name="lastName" id="lastName" value="{$lastName|escape}" maxlength="40" required>
+				
+				<input class="form-control" type="text" name="lastName" id="lastName" value="{$lastName|escape}" maxlength="40" required placeholder="{translate key="user.lastName"}">
 			</label>
 		</div>
 		<div class="form-group my-form-group affiliation">
 			<label>
-				{translate key="user.affiliation"}
-				<input class="form-control" type="text" name="affiliation[{$primaryLocale|escape}]" id="affiliation" value="{$affiliation.$primaryLocale|escape}" required>
+				
+				<input class="form-control" type="text" name="affiliation[{$primaryLocale|escape}]" id="affiliation" value="{$affiliation.$primaryLocale|escape}" required placeholder="{translate key="user.affiliation"}">
 			</label>
 		</div>
 		<div class="form-group my-form-group country">
@@ -65,26 +68,26 @@
   	<!--</legend>-->
 		<div class="form-group my-form-group email">
 			<label>
-				{translate key="user.email"}
-				<input class="form-control" type="text" name="email" id="email" value="{$email|escape}" maxlength="90" required>
+				
+				<input class="form-control" type="text" name="email" id="email" value="{$email|escape}" maxlength="90" required placeholder="{translate key="user.email"}">
 			</label>
 		</div>
 		<div class="form-group my-form-group username">
 			<label>
-				{translate key="user.username"}
-				<input class="form-control" type="text" name="username" id="username" value="{$username|escape}" maxlength="32" required>
+				
+				<input class="form-control" type="text" name="username" id="username" value="{$username|escape}" maxlength="32" required placeholder="{translate key="user.username"}">
 			</label>
 		</div>
 		<div class="form-group my-form-group password">
 			<label>
-				{translate key="user.password"}
-				<input class="form-control" type="password" name="password" id="password" password="true" maxlength="32" required>
+				
+				<input class="form-control" type="password" name="password" id="password" password="true" maxlength="32" required placeholder="{translate key="user.password"}">
 			</label>
 		</div>
 		<div class="form-group my-form-group password">
 			<label>
-				{translate key="user.repeatPassword"}
-				<input class="form-control" type="password" name="password2" id="password2" password="true" maxlength="32" required>
+				
+				<input class="form-control" type="password" name="password2" id="password2" password="true" maxlength="32" required placeholder="{translate key="user.repeatPassword"}">
 			</label>
 		</div>
 	</div>

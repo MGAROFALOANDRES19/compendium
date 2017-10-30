@@ -498,13 +498,20 @@ header > .pull-md-right{
   padding: 0;
 }
 #nav-main-menu .dropdown-menu > li > a{ color: white !important; }
+.item-padding{
+  padding: 15px 30px !important;
+}
+.contact_name {
+  color: #535e6b;
+  text-decoration: underline;
 
+}
 @media (min-width: 1301px) {
   .pkp_structure_main {
     padding: 0 10px;
   }
   .carousel .img-responsive{
-    min-height: 500px;
+    //min-height: 500px;
   }
 
 }
@@ -535,9 +542,11 @@ margin-top: 10px;
 }
 
 .my-form-group > a{
-  color: white;
+  //color: white;
 }
-
+.fields label{
+  width: 100%;
+}
 legend{margin-bottom: 0px;}
 .login legend{
   color: white;

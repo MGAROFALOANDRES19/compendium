@@ -18,6 +18,10 @@
   
   <message key="plugins.themes.compendium.submit_paper">Enviar artículo</message>
   <message key="plugins.themes.compendium.login">Iniciar sesión</message>
-  <message key="plugins.themes.compendium.registerNewAccount">Crear cuenta</message>
+  <message key="plugins.themes.compendium.registerNewAccount">Registrarse</message>
+
+  <message key="plugins.themes.compendium.send_online">Envío en línea</message>
+  <message key="plugins.themes.compendium.authors_guide">Guía para autores</message>
+  <message key="plugins.themes.compendium.contact_title">Contacto</message>
 
 </locale>

@@ -48,14 +48,26 @@
       </li>
       <li>
         <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialTeam"}">
-          {*translate key="about.editorialTeam"*}Contactos
+          {translate key="about.editorialTeam"}
         </a>
       </li>
       <li>
-        <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">
-          {*translate key="about.submissions"*}Directrices
+        <a href="{url router=$smarty.const.ROUTE_PAGE page="indexaciones"}">
+          Indexaciones
         </a>
       </li>
+      {if $enableAnnouncements}
+    <li>
+      <a href="{url router=$smarty.const.ROUTE_PAGE page="announcement"}">
+        {translate key="announcement.announcements"}
+      </a>
+    </li>
+    {/if}
+      {*<li>
+        <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">
+          {translate key="about.submissions"}Directrices
+        </a>
+      </li>*}
     {if $currentJournal->getSetting('mailingAddress') || $currentJournal->getSetting('contactName')}
     <li class="dropdown" id="item-desplegable">
 
@@ -64,9 +76,7 @@
 
     </li>
      <ul id="menu-desplegable" class="dropdown-menu">
-        <li>
-          <a href="#">Patrocinadores de la revista</a>
-        </li>
+        
         <li>
           <a href="#">Mapa del sitio</a>
         </li>
@@ -89,10 +99,26 @@
   {if $currentJournal}
 
   {if $currentJournal->getSetting('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
-  <li>
-    <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="current"}">
-      {*translate key="navigation.current"*}Seguimiento de envíos
+  <li class="dropdown">
+    <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="current"}" class="item-padding dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+      {*translate key="navigation.current"*}Seguimiento de envíos<span class="glyphicon glyphicon-triangle-right"></span>
+
+
     </a>
+
+    <ul class="dropdown-menu">
+      <li>
+        <a href="{url router=$smarty.const.ROUTE_PAGE page="login"}">
+          {translate key="plugins.themes.compendium.send_online"}
+        </a>
+      </li>
+      <li>
+        <a href="{url router=$smarty.const.ROUTE_PAGE page="login"}">
+          {translate key="plugins.themes.compendium.authors_guide"}
+        </a>
+      </li>
+
+    </ul>
   </li>
   <li>
     <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
@@ -101,21 +127,18 @@
   </li>
   {/if}
 
-    {/if}
 
-    {if $enableAnnouncements}
-    <li>
-      <a href="{url router=$smarty.const.ROUTE_PAGE page="announcement"}">
-        {translate key="announcement.announcements"}
+  <li>
+      <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="contact"}">
+        {translate key="about.contact"}
       </a>
     </li>
+
     {/if}
 
-    <li>
-      <a href="{url router=$smarty.const.ROUTE_PAGE page="indexaciones"}">
-        Indexaciones
-      </a>
-    </li>
+    
+
+   
   </ul>
 </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
