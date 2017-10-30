@@ -74,7 +74,7 @@
 		{/if}
 
 		{include file="frontend/components/registrationFormContexts.tpl"}
-
+		
 		{* recaptcha spam blocker *}
 		{if $reCaptchaHtml}
 			<fieldset class="recaptcha_wrapper">
@@ -97,6 +97,5 @@
 			</a>
 		</div>
 	</form>
-
 
 {include file="common/frontend/footer.tpl"}

@@ -113,7 +113,7 @@
         </a>
       </li>
       <li>
-        <a href="{url router=$smarty.const.ROUTE_PAGE page="login"}">
+        <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">
           {translate key="plugins.themes.compendium.authors_guide"}
         </a>
       </li>
@@ -154,6 +154,9 @@
 
 <div class="languages">
               <a href="{$baseUrl}/index.php/compendium/user/setLocale/es_ES"><img src="{$baseUrl}/plugins/themes/compendium/images/spanish.png" alt="Español"></a>
+
+              <span>/</span>
+
               <a href="{$baseUrl}/index.php/compendium/user/setLocale/en_US"><img src="{$baseUrl}/plugins/themes/compendium/images/english.png" alt="English"></a>
             </div>
     

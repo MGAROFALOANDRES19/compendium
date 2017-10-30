@@ -755,17 +755,20 @@ color: var(--color)
 }
 
 .languages{
-  //clear: both;
+  text-align: center;
 }
 
-.languages > a{
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  overflow: hidden;
-  background-color: transparent;
-  float: right;
+.languages > img{
+  
+ 
 }
 .languages > a > img {
-  
+  width: 30px;
+  height: 30px;
+  filter: grayscale(100%);
+  transition: 0.4s all;
+}
+
+.languages > a > img:hover {
+  filter: grayscale(0%);
 }

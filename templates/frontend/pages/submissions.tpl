@@ -74,6 +74,16 @@
 	{/if}
 	{* /Author Guidelines *}
 
+
+	<div class="revisor_guidelines">
+			<h2 class="page-header">
+				{translate key="plugins.themes.compendium.revisorGuidelines"}
+				{*include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="guidelines" sectionTitleKey="about.authorGuidelines"*}
+			</h2>
+			<p></p>
+			{$currentJournal->getLocalizedSetting('authorGuidelines')|nl2br}
+		</div>
+
 	{* Copyright Notice *}
 	{if $currentJournal->getLocalizedSetting('copyrightNotice')}
 		<div class="copyright-notice">
@@ -85,6 +95,18 @@
 		</div>
 	{/if}
 	{* /Copyright Notice *}
+
+	<div class="privacy-statement">
+			<h2 class="page-header">
+				{translate key="plugins.themes.compendium.privacyStatement"}
+				</span>{include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="policies" sectionTitleKey="about.copyrightNotice"}
+			</h2>
+			<p>
+				El artículo es un trabajo original y no duplica algún otro trabajo previamente publicado
+				El artículo ha sido enviado únicamente a COMPENDIUM, no está bajo consideración o revisión por pares o aceptado para publicación en cualquier otra revista. COMPENDIUM se reserva el derecho de investigar las contribuciones por material que no sea original o debidamente referenciado. Al enviar el artículo a COMPENDIUM los autores aceptan las condiciones arriba expuestas.
+
+			</p>
+		</div>
 
 </div><!-- .page -->
 

@@ -25,4 +25,7 @@
   <message key="plugins.themes.compendium.revisor_guide">Guía de revisores</message>
   <message key="plugins.themes.compendium.contact_title">Contacto</message>
 
+  <message key="plugins.themes.compendium.revisorGuidelines">Directrices para revisores/as</message>
+  <message key="plugins.themes.compendium.privacyStatement">Declaración de privacidad</message>
+
 </locale>
