@@ -20,6 +20,19 @@
         --gray: #535e6b;
 }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fontawesome-webfont.eot?v=4.7.0');
+  src: url('fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+  url('fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+  url('fontawesome-webfont.woff?v=4.7.0') format('woff'),
+  url('fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+  url('fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body{
   font-family: 'MyriadProR';
 font-size: 16px;
@@ -143,19 +156,33 @@ width: 100%; }
 
 .galley-link{
       display: inline-block;
-    padding: 0 1em;
+    padding: 0.3em 0.8em;
     background: #fff;
     border: 1px solid #007bc4;
     border-radius: 3px !important;
-    font-size: 13px;
-    line-height: 28px;
+    //font-size: 13px;
+    //line-height: 28px;
     color: #007bc4;
     text-decoration: none;
-    margin-right: 1em;
+    //margin-right: 1em;
 }
 .galley-link:hover, .galley-link:focus {
     background: #007bc4;
     color: #fff;
+}
+.galley-link.pdf:before {
+    content: "\f1c1";
+}
+.galley-link:before {
+    content: "\f0f6";
+    font-family: "FontAwesome";
+    //margin-right: 0.30em;
+}
+.galley-link-pdf:after {
+  margin-left: 0.4em;
+  content: "\f1c1";
+  font-family: "FontAwesome";
+
 }
 
 .journal-description{
@@ -506,6 +533,12 @@ header > .pull-md-right{
   text-decoration: underline;
 
 }
+
+.linea-menu {
+  height: auto;
+  background-color: initial;
+
+}
 @media (min-width: 1301px) {
   .pkp_structure_main {
     padding: 0 10px;
@@ -722,8 +755,7 @@ color: var(--color)
 }
 
 .languages{
-  clear: both;
-
+  //clear: both;
 }
 
 .languages > a{

@@ -77,6 +77,8 @@
 
 		<div class="registro">
 
+			<p>Para envio de artículos crear una cuenta</p>
+
 			{url|assign:registerUrl page="user" op="register" source=$source}
 
 			<a class="btn btn-default register-button" href="{$registerUrl}" role="button">{translate key="plugins.themes.compendium.registerNewAccount"}</a>

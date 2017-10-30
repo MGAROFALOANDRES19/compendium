@@ -134,6 +134,29 @@
       </a>
     </li>
 
+    <hr class="linea-menu">
+
+
+    <li>
+      <a href="#" class="galley-link-pdf">
+        {translate key="plugins.themes.compendium.authors_guide"}
+      </a>
+    </li>
+
+    <li>
+      <a href="#" class="galley-link-pdf">
+        {translate key="plugins.themes.compendium.revisor_guide"}
+      </a>
+    </li>
+
+
+    <hr class="linea-menu">
+
+<div class="languages">
+              <a href="{$baseUrl}/index.php/compendium/user/setLocale/es_ES"><img src="{$baseUrl}/plugins/themes/compendium/images/spanish.png" alt="Español"></a>
+              <a href="{$baseUrl}/index.php/compendium/user/setLocale/en_US"><img src="{$baseUrl}/plugins/themes/compendium/images/english.png" alt="English"></a>
+            </div>
+    
     {/if}
 
     

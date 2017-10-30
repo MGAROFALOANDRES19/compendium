@@ -1,6 +1,8 @@
 {**
  * templates/frontend/objects/galley_link.tpl
  *
+ * Copyright (c) 2014-2017 Simon Fraser University Library
+ * Copyright (c) 2003-2017 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief View of a galley object as a link to view or download the galley, to be used
@@ -47,12 +49,13 @@
 {/if}
 
 {* Don't be frightened. This is just a link *}
-<!--<a class=".galley-link {$type}{if $restricted} restricted{/if}" href="{url page=$page op="view" path=$parentId|to_array:$galley->getBestGalleyId()}">-->
-	<a class="galley-link btn btn-default role="button" {$type}{if $restricted} restricted{/if}" href="{url page=$page op="view" path=$parentId|to_array:$galley->getBestGalleyId($currentJournal)}">
+
+	<a class="galley-link {$type}{if $restricted} restricted{/if}" href="{url page=$page op="view" path=$parentId|to_array:$galley->getBestGalleyId()}">
+
 
 	{* Add some screen reader text to indicate if a galley is restricted *}
 	{if $restricted}
-		<span class="pkp_screen_reader">
+		<span class="sr-only">
 			{if $purchaseArticleEnabled}
 				{translate key="reader.subscriptionOrFeeAccess"}
 			{else}
@@ -60,6 +63,6 @@
 			{/if}
 		</span>
 	{/if}
-	{$galley->getGalleyLabel()|escape}
 
+	{*$galley->getGalleyLabel()|escape*}
 </a>
