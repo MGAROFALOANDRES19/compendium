@@ -76,7 +76,7 @@
 
     </li>
      <ul id="menu-desplegable" class="dropdown-menu">
-        
+
         <li>
           <a href="#">Mapa del sitio</a>
         </li>
@@ -152,19 +152,13 @@
 
     <hr class="linea-menu">
 
-<div class="languages">
-              <a href="{$baseUrl}/index.php/compendium/user/setLocale/es_ES"><img src="{$baseUrl}/plugins/themes/compendium/images/spanish.png" alt="Español"></a>
 
-              <span>/</span>
 
-              <a href="{$baseUrl}/index.php/compendium/user/setLocale/en_US"><img src="{$baseUrl}/plugins/themes/compendium/images/english.png" alt="English"></a>
-            </div>
-    
     {/if}
 
-    
 
-   
+
+
   </ul>
 </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

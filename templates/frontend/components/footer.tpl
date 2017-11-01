@@ -30,7 +30,19 @@
   <footer class="footer" role="contentinfo">
 
   	<div class="container">
+      <div class="languages row">
 
+      {if $currentLocale|replace:"_":"-" eq "es-ES"}
+      <span>Español</span>
+      <a href="{$baseUrl}/index.php/compendium/user/setLocale/en_US">English</a>
+      {/if}
+
+      {if $currentLocale|replace:"_":"-" eq "en-US"}
+      <a href="{$baseUrl}/index.php/compendium/user/setLocale/es_ES">Español</a>
+      <span>English</span>
+      {/if}
+
+                  </div>
       <div class="row">
     		{if $pageFooter}
         <div class="col-md-8">
@@ -69,8 +81,9 @@
     		</div>
 
       </div> <!-- .row -->
-      
+
   	</div><!-- .container -->
+
   </footer>
 </div><!-- pkp_structure_page -->
 
