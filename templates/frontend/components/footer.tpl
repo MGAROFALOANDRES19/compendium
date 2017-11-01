@@ -30,19 +30,7 @@
   <footer class="footer" role="contentinfo">
 
   	<div class="container">
-      <div class="languages row">
-
-      {if $currentLocale|replace:"_":"-" eq "es-ES"}
-      <span>Español</span>
-      <a href="{$baseUrl}/index.php/compendium/user/setLocale/en_US">English</a>
-      {/if}
-
-      {if $currentLocale|replace:"_":"-" eq "en-US"}
-      <a href="{$baseUrl}/index.php/compendium/user/setLocale/es_ES">Español</a>
-      <span>English</span>
-      {/if}
-
-                  </div>
+      
       <div class="row">
     		{if $pageFooter}
         <div class="col-md-8">
@@ -59,18 +47,35 @@
 
           <div class="social-share">
                             <a class="svg-icon-social" href="#" title="Follow on Twitter">
-                                <img src="https://cdn.elsevier.io/verona/includes/svg/icon-social-twitter.svg" alt="Icon social media twitter">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
                             </a>
                             <a class="svg-icon-social" href="#" title="Follow on Facebook">
-                                <img src="https://cdn.elsevier.io/verona/includes/svg/icon-social-facebook.svg" alt="Icon social media facebook">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
                             <a class="svg-icon-social" href="#" title="Follow on LinkedIn">
-                                <img src="https://cdn.elsevier.io/verona/includes/svg/icon-social-linkedin.svg" alt="Icon social media linkedin">
+                               <i class="fa fa-linkedin" aria-hidden="true"></i>
                             </a>
                             <a class="svg-icon-social" href="#" title="Follow on Goolge+">
-                                <img src="https://cdn.elsevier.io/verona/includes/svg/icon-social-googleplus.svg" alt="Icon social media google plus">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
                             </a>
                         </div>
+
+
+                        <div class="languages">
+
+      {if $currentLocale|replace:"_":"-" eq "es-ES"}
+      <span>Español</span>
+      <span>/</span>
+      <a href="{$baseUrl}/index.php/compendium/user/setLocale/en_US">English</a>
+      {/if}
+     
+      {if $currentLocale|replace:"_":"-" eq "en-US"}
+      <a href="{$baseUrl}/index.php/compendium/user/setLocale/es_ES">Español</a>
+      <span>/</span>
+      <span>English</span>
+      {/if}
+
+                  </div>
     			<!--<a href="{url page="about" op="aboutThisPublishingSystem"}">
             <img src="{$baseUrl}/plugins/themes/compendium/images/recurso_1.png" class="img-logo">
     			</a>-->

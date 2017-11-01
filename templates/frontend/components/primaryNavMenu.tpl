@@ -138,13 +138,13 @@
 
 
     <li>
-      <a href="#" class="galley-link-pdf">
+      <a href="#" class="">
         {translate key="plugins.themes.compendium.authors_guide"}
       </a>
     </li>
 
     <li>
-      <a href="#" class="galley-link-pdf">
+      <a href="#" class="">
         {translate key="plugins.themes.compendium.revisor_guide"}
       </a>
     </li>

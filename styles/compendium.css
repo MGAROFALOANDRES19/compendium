@@ -32,6 +32,27 @@
   font-style: normal;
 }
 
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-facebook:before {
+  content: "\f09a";
+}
+.fa-twitter:before {
+  content: "\f099";
+}
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+
 
 body{
   font-family: 'MyriadProR';
@@ -242,7 +263,7 @@ fieldset .fields{
   height: 150px;
   margin-top: 0 !important;
   background-color: #535e6b !important;
-  border-bottom: 8px solid #007bc4;
+  //border-bottom: 8px solid #007bc4;
   z-index: 5;
 }
 
@@ -756,8 +777,7 @@ color: var(--color)
 
 .languages{
   text-align: center;
-      margin-top: -1em;
-      margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .languages > a{
@@ -790,11 +810,14 @@ color: var(--color)
   display: flex;
   justify-content: flex-end;
 }
-.social-share img{
-  width: 35px;
-  height: 35px;
-  filter: saturate(300%);
+.svg-icon-social {
+    text-align: center;
+    color: white;
+    margin: 0 0.5em;
 }
-.social-share img:hover{
-  filter: saturate(500%);
+.fa:hover {
+  color: #0099ee;
+}
+.glyphicon-triangle-left:hover, .glyphicon-triangle-right:hover{
+  opacity: 0.7;
 }
