@@ -44,10 +44,25 @@
     		{/if}
 
     		<div class="col-md-4" role="complementary" aria-label="{translate|escape key="about.aboutThisPublishingSystem"}">
-    			<a href="{url page="about" op="aboutThisPublishingSystem"}">
-    				<!--<img alt="{translate key=$packageKey}" src="{$baseUrl}/{$brandImage}">-->
+
+          <div class="social-share">
+                            <a class="svg-icon-social" href="#" title="Follow on Twitter">
+                                <img src="https://cdn.elsevier.io/verona/includes/svg/icon-social-twitter.svg" alt="Icon social media twitter">
+                            </a>
+                            <a class="svg-icon-social" href="#" title="Follow on Facebook">
+                                <img src="https://cdn.elsevier.io/verona/includes/svg/icon-social-facebook.svg" alt="Icon social media facebook">
+                            </a>
+                            <a class="svg-icon-social" href="#" title="Follow on LinkedIn">
+                                <img src="https://cdn.elsevier.io/verona/includes/svg/icon-social-linkedin.svg" alt="Icon social media linkedin">
+                            </a>
+                            <a class="svg-icon-social" href="#" title="Follow on Goolge+">
+                                <img src="https://cdn.elsevier.io/verona/includes/svg/icon-social-googleplus.svg" alt="Icon social media google plus">
+                            </a>
+                        </div>
+    			<!--<a href="{url page="about" op="aboutThisPublishingSystem"}">
             <img src="{$baseUrl}/plugins/themes/compendium/images/recurso_1.png" class="img-logo">
-    			</a>
+    			</a>-->
+            <!--<img alt="{translate key=$packageKey}" src="{$baseUrl}/{$brandImage}">-->
     			<!--<a href="{$pkpLink}">
     				<img alt="{translate key="common.publicKnowledgeProject"}" src="{$baseUrl}/lib/pkp/templates/images/pkp_brand.png">
     			</a>-->

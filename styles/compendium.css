@@ -772,3 +772,16 @@ color: var(--color)
 .languages > a > img:hover {
   filter: grayscale(0%);
 }
+
+.social-share {
+  display: flex;
+  justify-content: flex-end;
+}
+.social-share img{
+  width: 35px;
+  height: 35px;
+  filter: saturate(300%);
+}
+.social-share img:hover{
+  filter: saturate(500%);
+}
