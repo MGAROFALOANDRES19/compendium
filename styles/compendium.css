@@ -756,12 +756,25 @@ color: var(--color)
 
 .languages{
   text-align: center;
+      margin-top: -1em;
+      margin-bottom: 1em;
 }
 
-.languages > img{
-  
- 
+.languages > a{
+  float: right;
+  color: white;
+  text-decoration: underline;
+  margin-left: 10px;
+
 }
+
+.languages > span{
+  float: right;
+  color: white;
+  margin-left: 10px;
+
+}
+
 .languages > a > img {
   width: 30px;
   height: 30px;
