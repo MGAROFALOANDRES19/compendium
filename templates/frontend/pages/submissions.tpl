@@ -13,12 +13,11 @@
 {include file="frontend/components/header.tpl" pageTitle="about.submissions"}
 
 <div id="main-content" class="page page_submissions">
-
 	{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.submissions"}
 
 	{* Page Title *}
 	<div class="page-header">
-		<h1>{translate key="about.submissions"}</h1>
+		<h1>{translate key="plugins.themes.compendium.submissions"}</h1>
 	</div>
 	{* /Page Title *}
 
@@ -65,10 +64,12 @@
 	{* Author Guidelines *}
 	{if $currentJournal->getLocalizedSetting('authorGuidelines')}
 		<div class="author_guidelines">
-			<h2 class="page-header">
+			<h3 class="page-header">
+				<strong>
 				{translate key="about.authorGuidelines"}
 				{include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="guidelines" sectionTitleKey="about.authorGuidelines"}
-			</h2>
+				</strong>
+			</h3>
 			{$currentJournal->getLocalizedSetting('authorGuidelines')|nl2br}
 		</div>
 	{/if}
@@ -76,10 +77,13 @@
 
 
 	<div class="revisor_guidelines">
-			<h2 class="page-header">
+			<h3 class="page-header">
+				<strong>
+					
 				{translate key="plugins.themes.compendium.revisorGuidelines"}
 				{*include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="guidelines" sectionTitleKey="about.authorGuidelines"*}
-			</h2>
+				</strong>
+			</h3>
 			<p></p>
 			{$currentJournal->getLocalizedSetting('authorGuidelines')|nl2br}
 		</div>
@@ -87,20 +91,26 @@
 	{* Copyright Notice *}
 	{if $currentJournal->getLocalizedSetting('copyrightNotice')}
 		<div class="copyright-notice">
-			<h2 class="page-header">
+			<h3 class="page-header">
+				<strong>
+					
 				{translate key="about.copyrightNotice"}
-				</span>{include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="policies" sectionTitleKey="about.copyrightNotice"}
-			</h2>
+				{include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="policies" sectionTitleKey="about.copyrightNotice"}
+				</strong>
+			</h3>
 			{$currentJournal->getLocalizedSetting('copyrightNotice')|nl2br}
 		</div>
 	{/if}
 	{* /Copyright Notice *}
 
 	<div class="privacy-statement">
-			<h2 class="page-header">
+			<h3 class="page-header">
+				<strong>
+					
 				{translate key="plugins.themes.compendium.privacyStatement"}
-				</span>{include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="policies" sectionTitleKey="about.copyrightNotice"}
-			</h2>
+				{include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="policies" sectionTitleKey="about.copyrightNotice"}
+				</strong>
+			</h3>
 			<p>
 				El artículo es un trabajo original y no duplica algún otro trabajo previamente publicado
 				El artículo ha sido enviado únicamente a COMPENDIUM, no está bajo consideración o revisión por pares o aceptado para publicación en cualquier otra revista. COMPENDIUM se reserva el derecho de investigar las contribuciones por material que no sea original o debidamente referenciado. Al enviar el artículo a COMPENDIUM los autores aceptan las condiciones arriba expuestas.

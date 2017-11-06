@@ -32,18 +32,9 @@
   	<div class="container">
       
       <div class="row">
-    		{if $pageFooter}
-        <div class="col-md-8">
-          {$pageFooter}
+    		
 
-
-          <p class="telefono">
-            <span>(04) 2269061 / (04) 2269039</span></p>
-
-        </div>
-    		{/if}
-
-    		<div class="col-md-4" role="complementary" aria-label="{translate|escape key="about.aboutThisPublishingSystem"}">
+    		<div class="col-md-8" role="complementary" aria-label="{translate|escape key="about.aboutThisPublishingSystem"}">
 
           <div class="social-share">
                             <a class="svg-icon-social" href="#" title="Follow on Twitter">
@@ -76,14 +67,28 @@
       {/if}
 
                   </div>
-    			<!--<a href="{url page="about" op="aboutThisPublishingSystem"}">
-            <img src="{$baseUrl}/plugins/themes/compendium/images/recurso_1.png" class="img-logo">
-    			</a>-->
+    			
+
             <!--<img alt="{translate key=$packageKey}" src="{$baseUrl}/{$brandImage}">-->
     			<!--<a href="{$pkpLink}">
     				<img alt="{translate key="common.publicKnowledgeProject"}" src="{$baseUrl}/lib/pkp/templates/images/pkp_brand.png">
     			</a>-->
     		</div>
+
+        {if $pageFooter}
+        <div class="col-md-4 logo-telefono">
+          <a href="{url page="about" op="aboutThisPublishingSystem"}">
+            <img src="{$baseUrl}/plugins/themes/compendium/images/recurso_1.png" class="img-logo">
+          </a>
+
+          
+
+
+          <!--<p class="telefono">
+            <span>(04) 2269061 / (04) 2269039</span></p>-->
+
+        </div>
+        {/if}
 
       </div> <!-- .row -->
 

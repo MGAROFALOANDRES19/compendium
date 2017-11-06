@@ -232,4 +232,14 @@
 	.nav-pills > li{
 		float: none;
 	}
+	.social-share {
+		justify-content: center;
+		margin-top: 1.5em;
+	}
+	.languages {
+		text-align: center;
+	}
+	.logo-telefono a {
+		text-align: center;
+	}
 }

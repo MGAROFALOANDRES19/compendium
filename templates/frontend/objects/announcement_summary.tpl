@@ -11,11 +11,13 @@
  *}
 <article class="announcement-summary media">
 	<div class="media-body">
-		<h2 class="media-heading">
-			<a href="{url router=$smarty.const.ROUTE_PAGE page="announcement" op="view" path=$announcement->getId()}">
+		<h3 class="media-heading">
+			<a class="gray" href="{url router=$smarty.const.ROUTE_PAGE page="announcement" op="view" path=$announcement->getId()}">
+				<strong>
 				{$announcement->getLocalizedTitle()|escape}
+				</strong>
 			</a>
-		</h2>
+		</h3>
 		<p class="date">
 			<span class="glyphicon glyphicon-calendar"></span>
 			{$announcement->getDatePosted()}

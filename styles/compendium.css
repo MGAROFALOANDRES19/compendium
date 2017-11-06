@@ -373,6 +373,9 @@ a{
   margin: 0 auto;
   padding: 20px;
 }
+.page-header {
+  border-bottom: 1px solid #eee;
+}
 .indexaciones p{
   text-align: center;
 }
@@ -551,8 +554,6 @@ header > .pull-md-right{
 }
 .contact_name {
   color: #535e6b;
-  text-decoration: underline;
-
 }
 
 .linea-menu {
@@ -600,6 +601,7 @@ margin-top: 10px;
 }
 .fields label{
   width: 100%;
+  color: #8d9399;
 }
 legend{margin-bottom: 0px;}
 .login legend{
@@ -677,9 +679,9 @@ h5{
 select{
   background: #FFFFFF;
     height: 48px;
-    border: 1px #007bc4 solid;
+    border: 1px #535e6b solid;
     font-size: 16px;
-    color: #007bc4;
+    color: #535e6b;
     text-transform: uppercase;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -776,12 +778,11 @@ color: var(--color)
 }
 
 .languages{
-  text-align: center;
+  
   margin-top: 1em;
 }
 
 .languages > a{
-  float: right;
   color: white;
   text-decoration: underline;
   margin-left: 10px;
@@ -789,7 +790,6 @@ color: var(--color)
 }
 
 .languages > span{
-  float: right;
   color: white;
   margin-left: 10px;
 
@@ -808,16 +808,44 @@ color: var(--color)
 
 .social-share {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .svg-icon-social {
     text-align: center;
     color: white;
     margin: 0 0.5em;
+    font-size: 1.3em;
 }
 .fa:hover {
   color: #0099ee;
 }
 .glyphicon-triangle-left:hover, .glyphicon-triangle-right:hover{
-  opacity: 0.7;
+  opacity: 0.4;
+}
+.page_about_publishing_system img {
+  margin: 0 auto;
+  display: block;
+}
+.logo-telefono {
+  display: flex;
+  flex-direction: column;
+}
+.logo-telefono a {
+  text-align: right;
+}
+.logo-telefono .img-logo{
+  float: none;
+}
+.panel-default.copyright {
+  display: none;
+}
+.download .galley-link {
+  float: left;
+  margin: 5px 5px 0 0;
+}
+.flex-container {
+  display: flex;
+}
+.indexaciones div{
+  text-align: center;
 }

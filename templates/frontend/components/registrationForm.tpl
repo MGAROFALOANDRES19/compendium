@@ -52,8 +52,10 @@
 			<label>
 				{translate key="common.country"}
 				<select class="form-control" name="country" id="country" required>
-					<option></option>
+					<!--option></option>-->
+					<optgroup label="{translate key="common.country"}">
 					{html_options options=$countries selected=$country}
+					</optgroup>
 				</select>
 			</label>
 		</div>

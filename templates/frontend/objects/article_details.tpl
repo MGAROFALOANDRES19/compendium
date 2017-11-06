@@ -153,7 +153,7 @@
 
 
 <div id="panel-pdf" class="panel-body panel-default panel-pdf">
-					<div class="navbar-collapse">
+					<div class="navbar-collapse flex-container">
             {* Article Galleys *}
             			{if $article->getGalleys()}
             				<div class="download">

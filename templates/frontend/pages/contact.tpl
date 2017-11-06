@@ -21,28 +21,37 @@
 	</div>
 	{* /Page Title *}
 
-	<h2>DIRECCIÓN POSTAL</h2>
-	<p>Campus Gustavo Galindo, km. 30.5 vía perimetral</p>
-	<p>Facultad de Ciencias Sociales y Humanísticas</p>
-	<p>Edificio Administrativo FCSH</p>
-	<p>Escuela Superior Politécnica del Litoral</p>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<h3><strong>CONTACTO PRINCIPAL</strong></h3>
+			<h3 class="contact_name">Mario Andrés Fernández</h3>
+			<p>PhD</p>
+			<p>FCSH-ESPOL</p>
+			<p>Km 30.5 Via Perimetral, Guayaquil - Ecuador</p>
+			<p><a href="mailto:mafernan@espol.edu.ec">mafernan@espol.edu.ec</a></p>
+			<h3 class="contact_name">María de los Ángeles Zambrano </h3>
+			<p>M.Sc.</p>
+			<p>FCSH-ESPOL</p>
+			<p>Km 30.5 Via Perimetral, Guayaquil - Ecuador</p>
+			<p><a href="mailto:madezamb@espol.edu.ec">madezamb@espol.edu.ec</a></p>
+			<p><strong>Teléfonos:</strong> {$pageFooter}</p>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			<h3><strong>DIRECCIÓN POSTAL</strong></h3>
+				<p>Campus Gustavo Galindo, km. 30.5 vía perimetral</p>
+				<p>Facultad de Ciencias Sociales y Humanísticas</p>
+				<p>Edificio Administrativo FCSH</p>
+				<p>Escuela Superior Politécnica del Litoral</p>
 
-	<h2>CONTACTO PRINCIPAL</h2>
-	<h3 class="contact_name">Mario Andrés Fernández</h3>
-	<p>PhD</p>
-	<p>FCSH-ESPOL</p>
-	<p>Km 30.5 Via Perimetral, Guayaquil - Ecuador</p>
-	<p>Correo electrónico: mafernan@espol.edu.ec</p>
-	<h3 class="contact_name">María de los Ángeles Zambrano </h3>
-	<p>M.Sc.</p>
-	<p>FCSH-ESPOL</p>
-	<p>Km 30.5 Via Perimetral, Guayaquil - Ecuador</p>
-	<p>Correo electrónico: madezamb@espol.edu.ec</p>
+				<h3><strong>CONTACTO DE ASISTENCIA</strong></h3>
+				<h3 class="contact_name">Jorge Navarrete</h3>
+				<p>Teléfono: 2269012</p>
+				<p><a href="mailto:jornavar@espol.edu.ec">jornavar@espol.edu.ec</a></p>
+			
+		</div>
+	</div>
 
-	<h2>CONTACTO DE ASISTENCIA</h2>
-	<h3 class="contact_name">Jorge</h3>
-	<p>Teléfono: 2269012</p>
-	<p>Correo electrónico: vmruiz@espol.edu.ec</p>
+	
 
 
 	

@@ -11,6 +11,9 @@
  *}
 
 <div class="announcements">
+	<div class="page-header">
+		<h1>Artículo científico</h1>
+	</div>
 	{foreach from=$announcements item=announcement}
 		{include file="frontend/objects/announcement_summary.tpl"}
 	{/foreach}
