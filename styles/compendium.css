@@ -375,6 +375,7 @@ a{
 }
 .page-header {
   border-bottom: 1px solid #eee;
+      text-transform: uppercase;
 }
 .indexaciones p{
   text-align: center;
@@ -440,6 +441,7 @@ a{
     margin-top: -10px;
     z-index: 2;
     display: inline-block;
+    transition: .5s all;
 }
 .glyphicon-triangle-left{
   left: 10px;
@@ -454,6 +456,7 @@ a{
 .glyphicon-triangle-right:before, .glyphicon-triangle-left:before{
   color:#007bc4;
   font-size: 2em;
+  //opacity: 0;
 }
 .carousel-control{
   opacity: 1;
@@ -819,8 +822,13 @@ color: var(--color)
 .fa:hover {
   color: #0099ee;
 }
-.glyphicon-triangle-left:hover, .glyphicon-triangle-right:hover{
-  opacity: 0.4;
+#myCarousel:hover  .carousel-control.left .glyphicon-triangle-left, 
+ #myCarousel:hover  .carousel-control.right .glyphicon-triangle-right{
+  opacity: .3;
+  //background-color: red !important;
+}
+#myCarousel .glyphicon-triangle-left,#myCarousel .glyphicon-triangle-right {
+  opacity: 0;
 }
 .page_about_publishing_system img {
   margin: 0 auto;
@@ -848,4 +856,34 @@ color: var(--color)
 }
 .indexaciones div{
   text-align: center;
+}
+
+.login .checkbox {
+  color: #535e6b !important;
+}
+.article-summary.media .meta {
+  width: 70%;
+}
+.article-summary.media .btn-group {
+  float: right;
+  margin-top: -2em;
+}
+
+.article-summary .media-heading {
+  width: 100%;
+}
+
+.article-summary.media  {
+  margin-bottom: 3.2em;
+  padding-bottom: 1em;
+  border-bottom: .1px solid #ccc;
+}
+h3 {
+//color :#007bc4;
+}
+.page_about p{
+margin:0;
+}
+.mail_compendium {
+  margin-top: 2.6em;
 }

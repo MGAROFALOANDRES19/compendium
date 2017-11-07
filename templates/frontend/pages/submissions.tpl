@@ -64,12 +64,12 @@
 	{* Author Guidelines *}
 	{if $currentJournal->getLocalizedSetting('authorGuidelines')}
 		<div class="author_guidelines">
-			<h3 class="page-header">
+			<h2 class="page-header">
 				<strong>
 				{translate key="about.authorGuidelines"}
 				{include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="guidelines" sectionTitleKey="about.authorGuidelines"}
 				</strong>
-			</h3>
+			</h2>
 			{$currentJournal->getLocalizedSetting('authorGuidelines')|nl2br}
 		</div>
 	{/if}
@@ -77,13 +77,13 @@
 
 
 	<div class="revisor_guidelines">
-			<h3 class="page-header">
+			<h2 class="page-header">
 				<strong>
 					
 				{translate key="plugins.themes.compendium.revisorGuidelines"}
 				{*include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="guidelines" sectionTitleKey="about.authorGuidelines"*}
 				</strong>
-			</h3>
+			</h2>
 			<p></p>
 			{$currentJournal->getLocalizedSetting('authorGuidelines')|nl2br}
 		</div>
@@ -91,26 +91,26 @@
 	{* Copyright Notice *}
 	{if $currentJournal->getLocalizedSetting('copyrightNotice')}
 		<div class="copyright-notice">
-			<h3 class="page-header">
+			<h2 class="page-header">
 				<strong>
 					
 				{translate key="about.copyrightNotice"}
 				{include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="policies" sectionTitleKey="about.copyrightNotice"}
 				</strong>
-			</h3>
+			</h2>
 			{$currentJournal->getLocalizedSetting('copyrightNotice')|nl2br}
 		</div>
 	{/if}
 	{* /Copyright Notice *}
 
 	<div class="privacy-statement">
-			<h3 class="page-header">
+			<h2 class="page-header">
 				<strong>
 					
 				{translate key="plugins.themes.compendium.privacyStatement"}
 				{include file="frontend/components/editLink.tpl" page="management" op="settings" path="journal" anchor="policies" sectionTitleKey="about.copyrightNotice"}
 				</strong>
-			</h3>
+			</h2>
 			<p>
 				El artículo es un trabajo original y no duplica algún otro trabajo previamente publicado
 				El artículo ha sido enviado únicamente a COMPENDIUM, no está bajo consideración o revisión por pares o aceptado para publicación en cualquier otra revista. COMPENDIUM se reserva el derecho de investigar las contribuciones por material que no sea original o debidamente referenciado. Al enviar el artículo a COMPENDIUM los autores aceptan las condiciones arriba expuestas.

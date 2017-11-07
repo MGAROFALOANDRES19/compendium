@@ -39,21 +39,21 @@
     {/if}
   </nav>
   <li class="dropdown">
-    <a href="{url router=$smarty.const.ROUTE_PAGE page="about"}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{translate key="navigation.about"} <span class="glyphicon glyphicon-triangle-right"></span></a>
+    <a href="{url router=$smarty.const.ROUTE_PAGE page="about"}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{translate key="plugins.themes.compendium.about"} <span class="glyphicon glyphicon-triangle-right"></span></a>
     <ul class="dropdown-menu">
       <li>
         <a href="{url router=$smarty.const.ROUTE_PAGE page="about"}">
-          {*translate key="about.aboutContext"*}Revista
+          {translate key="plugins.themes.compendium.revista"}
         </a>
       </li>
       <li>
         <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialTeam"}">
-          {translate key="about.editorialTeam"}
+          {translate key="plugins.themes.compendium.equipo"}
         </a>
       </li>
       <li>
         <a href="{url router=$smarty.const.ROUTE_PAGE page="indexaciones"}">
-          Indexaciones
+          {translate key="plugins.themes.compendium.indexaciones"}
         </a>
       </li>
       {if $enableAnnouncements}
@@ -71,18 +71,22 @@
     {if $currentJournal->getSetting('mailingAddress') || $currentJournal->getSetting('contactName')}
     <li class="dropdown" id="item-desplegable">
 
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Otros <span class="glyphicon glyphicon-triangle-right"></span></a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">{translate key="plugins.themes.compendium.otros"} <span class="glyphicon glyphicon-triangle-right"></span></a>
 
 
     </li>
      <ul id="menu-desplegable" class="dropdown-menu">
 
         <li>
-          <a href="#">Mapa del sitio</a>
+
+          
+
+          <a href="#">{translate key="plugins.themes.compendium.siteMap"}</a>
         </li>
         <li>
           <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="aboutThisPublishingSystem"}">
-          Acerca del sistema de publicacion
+            {translate key="plugins.themes.compendium.aboutThisSystem"}
+          
         </a>
         </li>
 
@@ -101,7 +105,7 @@
   {if $currentJournal->getSetting('publishingMode') != $smarty.const.PUBLISHING_MODE_NONE}
   <li class="dropdown">
     <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="current"}" class="item-padding dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-      {*translate key="navigation.current"*}Seguimiento de envíos<span class="glyphicon glyphicon-triangle-right"></span>
+      {translate key="plugins.themes.compendium.trackPaper"}<span class="glyphicon glyphicon-triangle-right"></span>
 
 
     </a>
@@ -114,7 +118,7 @@
       </li>
       <li>
         <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">
-          {translate key="plugins.themes.compendium.authors_guide"}
+          {translate key="plugins.themes.compendium.guides"}
         </a>
       </li>
 
@@ -122,7 +126,7 @@
   </li>
   <li>
     <a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}">
-      {*translate key="navigation.archives"*}Volúmenes
+      {translate key="plugins.themes.compendium.volumenes"}
     </a>
   </li>
   {/if}
@@ -138,13 +142,19 @@
 
 
     <li>
-      <a href="#" class="">
+      <a target="_blank" href='
+      {if $currentLocale|replace:"_":"-" eq "es-ES"}
+        https://espolec-my.sharepoint.com/personal/madezamb_espol_edu_ec/Documents/COMPENDIUM%20GU%C3%8DAS/brochure%20espa%C3%B1ol%202017.pdf?slrid=e3a42a9e-20ec-4000-623a-deb78cfe5dab
+         {else}
+         https://espolec-my.sharepoint.com/personal/madezamb_espol_edu_ec/Documents/COMPENDIUM%20GU%C3%8DAS/brochure%20en%20ingles%202017.pdf?slrid=eba42a9e-a08b-4000-623a-dd6da17215de
+      {/if}
+      ' class="">
         {translate key="plugins.themes.compendium.authors_guide"}
       </a>
     </li>
 
     <li>
-      <a href="#" class="">
+      <a target="_blank" href="https://espolec-my.sharepoint.com/personal/madezamb_espol_edu_ec/Documents/COMPENDIUM%20GU%C3%8DAS/brochure%20espa%C3%B1ol%202017%20rev.pdf?slrid=05a52a9e-80ff-4000-623a-d532cda56e86" class="">
         {translate key="plugins.themes.compendium.revisor_guide"}
       </a>
     </li>

@@ -15,6 +15,16 @@
 	<message key="plugins.themes.compendium.name">Tema Compendium</message>
   <message key="plugins.themes.compendium.description">Tema Compendium para los lectores.</message>
 
+  <message key="plugins.themes.compendium.about">Acerca de</message>
+  <message key="plugins.themes.compendium.revista">Revista</message>
+  <message key="plugins.themes.compendium.equipo">Equipo Editorial</message>
+  <message key="plugins.themes.compendium.indexaciones">Indexaciones</message>
+  <message key="plugins.themes.compendium.otros">Otros</message>
+  <message key="plugins.themes.compendium.siteMap">Mapa del sitio</message>
+  <message key="plugins.themes.compendium.aboutThisSystem">Acerca del sistema de publicación</message>
+  <message key="plugins.themes.compendium.trackPaper">Seguimiento de envíos</message>
+  <message key="plugins.themes.compendium.volumenes">Volúmenes</message>
+
   
   <message key="plugins.themes.compendium.submit_paper">Enviar artículo</message>
   <message key="plugins.themes.compendium.login">Iniciar sesión</message>
@@ -23,10 +33,13 @@
   <message key="plugins.themes.compendium.send_online">Envío en línea</message>
   <message key="plugins.themes.compendium.authors_guide">Guía de autores</message>
   <message key="plugins.themes.compendium.revisor_guide">Guía de revisores</message>
+  <message key="plugins.themes.compendium.guides">Lineamientos</message>
   <message key="plugins.themes.compendium.contact_title">Contacto</message>
 
   <message key="plugins.themes.compendium.revisorGuidelines">Directrices para revisores/as</message>
   <message key="plugins.themes.compendium.privacyStatement">Declaración de privacidad</message>
   <message key="plugins.themes.compendium.submissions">Guía de autores</message>
+
+  <message key="plugins.themes.compendium.userGroup">revisor</message>
 
 </locale>

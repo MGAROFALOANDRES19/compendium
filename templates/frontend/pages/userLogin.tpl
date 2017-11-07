@@ -55,11 +55,11 @@
 				</a>
 			</div>
 
-			{*<div class="checkbox">
+			<div class="checkbox">
 				<label>
 					<input type="checkbox" name="remember" id="remember" value="1" checked="$remember"> {translate key="user.login.rememberUsernameAndPassword"}
 				</label>
-			</div>*}
+			</div>
 
 			<div class="buttons">
 				<button type="submit" class="btn btn-primary">

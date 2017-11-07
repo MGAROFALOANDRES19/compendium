@@ -13,19 +13,33 @@
 	<message key="plugins.themes.compendium.name">Compendium Theme</message>
 	<message key="plugins.themes.compendium.description">Compendium theme for the reader frontend.</message>
 
-	<message key="plugins.themes.compendium.submit_paper">Submit paper</message>
+  <message key="plugins.themes.compendium.about">About the journal</message>
+  <message key="plugins.themes.compendium.revista">Compendium</message>
+  <message key="plugins.themes.compendium.equipo">Editorial Board</message>
+  <message key="plugins.themes.compendium.indexaciones">Indexations</message>
+  <message key="plugins.themes.compendium.otros">Others</message>
+  <message key="plugins.themes.compendium.siteMap">SiteMap</message>
+  <message key="plugins.themes.compendium.aboutThisSystem">About this Publishing System</message>
+  <message key="plugins.themes.compendium.trackPaper">Track your paper</message>
+  <message key="plugins.themes.compendium.volumenes">View articles</message>
+
+
+	<message key="plugins.themes.compendium.submit_paper">Submit your paper</message>
 	<message key="plugins.themes.compendium.login">Login</message>
 	<message key="plugins.themes.compendium.registerNewAccount">Create account</message>
 
 
-	<message key="plugins.themes.compendium.send_online">Envío en línea</message>
-  <message key="plugins.themes.compendium.authors_guide">Guía de autores</message>
-  <message key="plugins.themes.compendium.revisor_guide">Guía de revisores</message>
+	<message key="plugins.themes.compendium.send_online">Online Submission</message>
+  <message key="plugins.themes.compendium.authors_guide">GUIDE FOR AUTHORS</message>
+  <message key="plugins.themes.compendium.revisor_guide">GUIDE FOR REVIEWERS</message>
+  <message key="plugins.themes.compendium.guides">Guidelines</message>
   <message key="plugins.themes.compendium.contact_title">Contacto</message>
 
   <message key="plugins.themes.compendium.revisorGuidelines">Directrices para revisores/as</message>
   <message key="plugins.themes.compendium.privacyStatement">Declaración de privacidad</message>
   <message key="plugins.themes.compendium.submissions">Guía de autores</message>
+
+  <message key="plugins.themes.compendium.userGroup">reviser</message>
 
 	
 	
