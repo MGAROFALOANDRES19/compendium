@@ -887,3 +887,9 @@ margin:0;
 .mail_compendium {
   margin-top: 2.6em;
 }
+.siteMap ul{
+  padding-left: 1.5em;
+}
+.siteMap li {
+  list-style-type: square;
+}

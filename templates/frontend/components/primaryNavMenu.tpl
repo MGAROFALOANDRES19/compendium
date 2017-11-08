@@ -81,7 +81,7 @@
 
           
 
-          <a href="#">{translate key="plugins.themes.compendium.siteMap"}</a>
+          <a href="{url router=$smarty.const.ROUTE_PAGE page="siteMap"}">{translate key="plugins.themes.compendium.siteMap"}</a>
         </li>
         <li>
           <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="aboutThisPublishingSystem"}">
