@@ -35,6 +35,8 @@
 			{/iterate}
 		</div>
 
+		
+
 		{if $issues->getPageCount() > 0}
 			<nav class="text-center">
 				<ul class="pagination">

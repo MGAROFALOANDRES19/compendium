@@ -40,12 +40,13 @@
 				{else}
 					{$issueSeries|escape}
 				{/if}
-			</a>
+			
 			{if $issueTitle}
 				<div class="series lead">
 					{$issueSeries|escape}
 				</div>
 			{/if}
+			</a>
 		</h2>
 		<div class="description">
 			{$issueDescription|strip_unsafe_html|nl2br}
