@@ -50,7 +50,7 @@
 				<p>Escuela Superior Politécnica del Litoral</p>
 
 				<h2><strong>CONTACTO DE ASISTENCIA</strong></h2>
-				<h3 class="contact_name">Jorge Navarrete</h3>
+				<h3 class="contact_name">Jorge Armando Navarrete Mendoza</h3>
 				<p>Teléfono: 2269012</p>
 				<p><a href="mailto:jornavar@espol.edu.ec">jornavar@espol.edu.ec</a></p>
 

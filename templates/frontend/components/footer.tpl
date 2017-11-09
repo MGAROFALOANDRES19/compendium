@@ -37,16 +37,16 @@
     		<div class="col-md-8" role="complementary" aria-label="{translate|escape key="about.aboutThisPublishingSystem"}">
 
           <div class="social-share">
-                            <a class="svg-icon-social" href="#" title="Follow on Twitter">
+                            <a class="svg-icon-social" href="https://twitter.com/CompendiumEspol" title="Follow on Twitter" target="_blank">
                                 <i class="fa fa-twitter" aria-hidden="true"></i>
                             </a>
-                            <a class="svg-icon-social" href="#" title="Follow on Facebook">
+                            <a class="svg-icon-social" href="https://www.facebook.com/Compendium-Cuadernos-de-Econom%C3%ADa-y-Administraci%C3%B3n-1620340147986237" title="Follow on Facebook" target="_blank">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
-                            <a class="svg-icon-social" href="#" title="Follow on LinkedIn">
+                            <a class="svg-icon-social" href="https://www.linkedin.com/in/compendium-cuadernos-de-econom%C3%ADa-y-administraci%C3%B3n-590646152/" title="Follow on LinkedIn" target="_blank">
                                <i class="fa fa-linkedin" aria-hidden="true"></i>
                             </a>
-                            <a class="svg-icon-social" href="#" title="Follow on Goolge+">
+                            <a class="svg-icon-social" href="https://plus.google.com/u/0/103713845061988445502" title="Follow on Goolge+" target="_blank">
                                 <i class="fa fa-google-plus" aria-hidden="true"></i>
                             </a>
                         </div>
