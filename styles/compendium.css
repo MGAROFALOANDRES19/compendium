@@ -881,8 +881,11 @@ color: var(--color)
 h3 {
 //color :#007bc4;
 }
+.page_contact p{
+  margin:0;
+}
 .page_about p{
-margin:0;
+  margin: 0 0 15px 0;
 }
 .mail_compendium {
   margin-top: 2.6em;
