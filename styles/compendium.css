@@ -781,7 +781,7 @@ color: var(--color)
 }
 
 .languages{
-  
+
   margin-top: 1em;
 }
 
@@ -822,7 +822,7 @@ color: var(--color)
 .fa:hover {
   color: #0099ee;
 }
-#myCarousel:hover  .carousel-control.left .glyphicon-triangle-left, 
+#myCarousel:hover  .carousel-control.left .glyphicon-triangle-left,
  #myCarousel:hover  .carousel-control.right .glyphicon-triangle-right{
   opacity: .3;
   //background-color: red !important;
@@ -867,6 +867,7 @@ color: var(--color)
 .article-summary.media .btn-group {
   float: right;
   margin-top: -2em;
+  margin-bottom: 1px;
 }
 
 .article-summary .media-heading {
