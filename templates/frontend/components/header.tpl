@@ -172,14 +172,14 @@
         				<!--</div>-->
 							{/if}
 						{/if}
-            
+
 
 					</ul>
 				</div><!-- .row -->
 
 			</div><!-- .container-fluid -->
       {if !$noContextsConfigured}
-        <div class="pull-md-right">
+        <div class="container-fluid pull-md-right">
           {include file="frontend/components/searchForm_simple.tpl"}
         </div>
       {/if}
