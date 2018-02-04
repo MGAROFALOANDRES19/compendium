@@ -900,8 +900,9 @@ h3 {
 }
 .compendium-keywords {
   border: none;
+  box-shadow: none;
 }
-.compendium-keywords .panel-heading, .compendium-keywords -panel-body {
+.compendium-keywords .panel-heading, .compendium-keywords .panel-body {
   margin-top: 1em;
   padding: 0;
   background: transparent;
