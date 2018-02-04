@@ -39,7 +39,7 @@ $(document).ready(function(){
 		}*/
 		if (window.pageYOffset >= menuPosition  && $(window).width()>= 767 && window.pageYOffset>=131) {
 			//console.log("Hola");
-			console.log("pageYOffset: "+window.pageYOffset);
+			//console.log("pageYOffset: "+window.pageYOffset);
 			content.css("margin-left", "235px");
 			//content.css("width", "100%")
 
