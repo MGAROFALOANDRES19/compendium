@@ -898,3 +898,12 @@ h3 {
 .siteMap li {
   list-style-type: square;
 }
+.compendium-keywords {
+  border: none;
+}
+.compendium-keywords .panel-heading, .compendium-keywords -panel-body {
+  margin-top: 1em;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
