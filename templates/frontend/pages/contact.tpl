@@ -24,10 +24,24 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-6">
 			<h2><strong>CONTACTO PRINCIPAL</strong></h2>
-			<h3 class="contact_name">Mario Andrés Fernández<span>, PhD</span></h3>
+			<h3 class="contact_name">{if $contactName}
+				
+					{$contactName|escape}
+				
+				{/if}<span> if $contactTitle}
+				, {$contactTitle|escape}
+				{/if}</span></h3>
 			<p>Editor</p>
-			<p><a href="mailto:mafernan@espol.edu.ec">mafernan@espol.edu.ec</a></p>
-			<p>FCSH-ESPOL</p>
+			<p>{if $contactEmail}
+					<a href="mailto:{$contactEmail|escape}">
+						{$contactEmail|escape}
+					</a>
+				{/if}</p>
+			<p>{if $contactAffiliation}
+				<div class="affiliation">
+					{$contactAffiliation|strip_unsafe_html}
+				</div>
+				{/if}</p>
 			<p>Km 30.5 Via Perimetral, Guayaquil - Ecuador</p>
 			<h3 class="contact_name">María de los Ángeles Zambrano, <span>M.Sc.</span> </h3>
 			<p>Coordinadora</p>
@@ -36,7 +50,9 @@
 			<p>Km 30.5 Via Perimetral, Guayaquil - Ecuador</p>
 
 			<h2>Teléfonos Revista:</h2>
-			<p>{$pageFooter}</p>
+			<p>{if $contactPhone}
+			  {$contactPhone|escape}
+			  {/if}}</p>
 
 			
 
@@ -44,15 +60,33 @@
 		</div>
 		<div class="col-xs-12 col-sm-6">
 			<h2><strong>DIRECCIÓN POSTAL</strong></h2>
-				<p>Campus Gustavo Galindo, km. 30.5 vía perimetral</p>
-				<p>Facultad de Ciencias Sociales y Humanísticas</p>
-				<p>Edificio Administrativo FCSH</p>
-				<p>Escuela Superior Politécnica del Litoral</p>
+				{if $mailingAddress}
+			<div class="address">
+				{$mailingAddress|nl2br|strip_unsafe_html}
+			</div>
+		{/if}
 
 				<h2><strong>CONTACTO DE ASISTENCIA</strong></h2>
-				<h3 class="contact_name">Jorge Armando Navarrete Mendoza</h3>
-				<p>Teléfono: 2269012</p>
-				<p><a href="mailto:jornavar@espol.edu.ec">jornavar@espol.edu.ec</a></p>
+				<h3 class="contact_name">{if $supportName}
+					{$supportName|escape}
+				{/if}</h3>
+				<p>{if $supportPhone}
+				<div class="phone">
+					<span class="label">
+						{translate key="about.contact.phone"}
+					</span> : 
+					<span class="value">
+						{$supportPhone|escape}
+					</span>
+				</div>
+				{/if}</p>
+				<p>{if $supportEmail}
+				<div class="email">
+					<a href="mailto:{$supportEmail|escape}">
+						{$supportEmail|escape}
+					</a>
+				</div>
+				{/if}</p>
 
 				<h2 class="mail_compendium">Email Revista:</h2>
 			<p><a href="mailto:compendium@espol.edu.ec">compendium@espol.edu.ec</a></p>
