@@ -71,8 +71,8 @@
 					{$supportName|escape}
 				{/if}</h3>
 				<p>{if $supportPhone}
-				<div class="phone">
-					<span class="label">
+				<div>
+					<span>
 						{translate key="about.contact.phone"}
 					</span> : 
 					<span class="value">
