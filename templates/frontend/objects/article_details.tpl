@@ -155,16 +155,6 @@
 						</div>
 					</div>
 				{/if}
-
-			
-			
-
-<h1>Fin de keywords</h1>
-
-
-
-				
-
 				
 
 			</section><!-- .article-main -->
