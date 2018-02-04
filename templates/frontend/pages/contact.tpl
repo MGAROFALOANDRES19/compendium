@@ -28,7 +28,7 @@
 				
 					{$contactName|escape}
 				
-				{/if}<span> if $contactTitle}
+				{/if}<span> {if $contactTitle}
 				, {$contactTitle|escape}
 				{/if}</span></h3>
 			<p>Editor</p>
@@ -52,7 +52,7 @@
 			<h2>Teléfonos Revista:</h2>
 			<p>{if $contactPhone}
 			  {$contactPhone|escape}
-			  {/if}}</p>
+			  {/if}</p>
 
 			
 
