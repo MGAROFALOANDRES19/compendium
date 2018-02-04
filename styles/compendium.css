@@ -812,6 +812,7 @@ color: var(--color)
 .social-share {
   display: flex;
   justify-content: flex-start;
+  visibility: hidden;
 }
 .svg-icon-social {
     text-align: center;
