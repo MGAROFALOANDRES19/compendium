@@ -85,7 +85,7 @@
 				</strong>
 			</h2>
 			<p>Para lineamientos sobre el envío de los artículos, revisar el siguiente vínculo: </p>
-			<p><a target="_blank" href="https://espolec-my.sharepoint.com/personal/madezamb_espol_edu_ec/Documents/COMPENDIUM%20GU%C3%8DAS/brochure%20espa%C3%B1ol%202017%20rev.pdf?slrid=05a52a9e-80ff-4000-623a-d532cda56e86" class="">Brochure español</a></p>
+			<p><a target="_blank" href="https://drive.google.com/file/d/1IR8bgsjhYblfwjNBRPlRXBODQwymQTAK/view" class="">Brochure español</a></p>
 			{*$currentJournal->getLocalizedSetting('authorGuidelines')|nl2br*}
 		</div>
 
