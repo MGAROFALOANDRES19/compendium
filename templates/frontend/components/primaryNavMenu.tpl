@@ -144,9 +144,9 @@
     <li>
       <a target="_blank" href='
       {if $currentLocale|replace:"_":"-" eq "es-ES"}
-        https://espolec-my.sharepoint.com/personal/madezamb_espol_edu_ec/Documents/COMPENDIUM%20GU%C3%8DAS/brochure%20espa%C3%B1ol%202017.pdf?slrid=e3a42a9e-20ec-4000-623a-deb78cfe5dab
+        https://drive.google.com/file/d/1XApDcBnVsbTYhmYT5z3a_wtKuF0T_R95/view
          {else}
-         https://espolec-my.sharepoint.com/personal/madezamb_espol_edu_ec/Documents/COMPENDIUM%20GU%C3%8DAS/brochure%20en%20ingles%202017.pdf?slrid=eba42a9e-a08b-4000-623a-dd6da17215de
+         https://drive.google.com/file/d/1z-tsIBWRbBttd3E6079g8o3LVwiv1HgR/view
       {/if}
       ' class="">
         {translate key="plugins.themes.compendium.authors_guide"}
@@ -154,7 +154,7 @@
     </li>
 
     <li>
-      <a target="_blank" href="https://espolec-my.sharepoint.com/personal/madezamb_espol_edu_ec/Documents/COMPENDIUM%20GU%C3%8DAS/brochure%20espa%C3%B1ol%202017%20rev.pdf?slrid=05a52a9e-80ff-4000-623a-d532cda56e86" class="">
+      <a target="_blank" href="https://drive.google.com/file/d/1IR8bgsjhYblfwjNBRPlRXBODQwymQTAK/view" class="">
         {translate key="plugins.themes.compendium.revisor_guide"}
       </a>
     </li>
