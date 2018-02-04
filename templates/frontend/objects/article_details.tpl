@@ -123,11 +123,49 @@
 						</div>
 					</div>
 				{/if}
+{call_hook name="Templates::Article::Main"}
 
-				{* Keywords *}
-				{* @todo keywords not yet implemented *}
 
-				{call_hook name="Templates::Article::Main"}
+{* Keywords *}
+				{if !empty($keywords[$currentLocale])}
+					<div class="panel panel-default subject compendium-keywords">
+						<div class="panel-heading">
+							<h2>{translate key="article.subject"}</h2>
+						</div>
+						<div class="panel-body">
+							{foreach from=$keywords item=keyword}
+						{foreach name=keywords from=$keyword item=keywordItem}
+							{$keywordItem|escape}{if !$smarty.foreach.keywords.last}, {/if}
+						{/foreach}
+					{/foreach}
+						</div>
+					</div>
+				{/if}
+
+
+
+{* Article Subject *}
+				{if $article->getLocalizedSubject()}
+					<div class="panel panel-default subject compendium-keywords">
+						<div class="panel-heading">
+							<h2>{translate key="article.subject"}</h2>
+						</div>
+						<div class="panel-body">
+							{$article->getLocalizedSubject()|escape}
+						</div>
+					</div>
+				{/if}
+
+			
+			
+
+<h1>Fin de keywords</h1>
+
+
+
+				
+
+				
 
 			</section><!-- .article-main -->
 
@@ -212,17 +250,7 @@
 					{/if}
 				{/foreach}
 
-				{* Article Subject *}
-				{if $article->getLocalizedSubject()}
-					<div class="panel panel-default subject">
-						<div class="panel-heading">
-							{translate key="article.subject"}
-						</div>
-						<div class="panel-body">
-							{$article->getLocalizedSubject()|escape}
-						</div>
-					</div>
-				{/if}
+				
 
 				{* Issue article appears in *}
 				<div class="panel panel-default issue">
